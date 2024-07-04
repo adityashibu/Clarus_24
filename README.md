@@ -1,1 +1,1 @@
-## Clarus 24 Website
+# Clarus Website
