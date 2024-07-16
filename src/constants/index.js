@@ -55,21 +55,48 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Student Developer",
+        title: "Envision",
         icon: web,
+        description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes."
     },
     {
-        title: "Python Developer",
+        title: "Design",
         icon: mobile,
+        description: "Co-create solutions tailored to your industry's unique hybrid technology environment."
     },
     {
-        title: "Backend Developer",
+        title: "Adapt",
         icon: backend,
+        description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation."
     },
     {
-        title: "Content Creator",
+        title: "Evolve",
         icon: creator,
+        description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization."
     },
+];
+
+const about = [
+    {
+        title: "Happy Clients",
+        icon: web,
+        count: 17,
+    },
+    {
+        title: "Projects Completed",
+        icon: web,
+        count: 30,
+    },
+    {
+        title: "Hours of Support",
+        icon: web,
+        count: 700,
+    },
+    {
+        title: "Hard Workers",
+        icon: web,
+        count: 7,
+    }
 ];
 
 const technologies = [
@@ -364,4 +391,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects, personalpicture };
+export { services, about, technologies, experiences, testimonials, projects, personalpicture };

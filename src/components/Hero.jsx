@@ -1,20 +1,24 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto bg-hero-pattern bg-no-repeat bg-cover bg-center">
+    <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex flex-row gap-5 items-center`}>
-        <div>
+        <motion.div
+          variants={fadeIn('up', 'spring', 0.5)}
+          initial="hidden"
+          animate="show"
+        >
           <h1 className={`${styles.heroHeadText} text-black`}>
             <span className="text-customBlue font-aquirebold text-[120%]">CLARUS24</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
             CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
