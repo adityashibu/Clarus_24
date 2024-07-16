@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue opacity-50 flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0]
@@ -42,4 +43,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, "home");

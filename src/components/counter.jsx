@@ -15,7 +15,7 @@ const Counter = ({ endCount }) => {
         return () => clearInterval(interval);
     }, [count, endCount]);
 
-    return <div className="text-customBlue font-aquirebold text-[400%]">{count}</div>;
+    return <div className="text-customBlue font-aquirebold text-[400%]">{count}+</div>;
 };
 
 export default Counter;
