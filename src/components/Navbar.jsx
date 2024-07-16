@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black`}
+        ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -35,14 +35,14 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex px-1">Aditya &nbsp;<span className="sm:block hidden text-[18px]">|&nbsp; Student Developer</span></p>
+          <p className="text-customBlue text-[25px] font-bold cursor-pointer flex -mx-11 sm:-mx-1 font-aquirebold">Clarus24</p>
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li key={link.id}
               className={`
-                ${active == link.title ? "text-white" : "text-gray-400"} hover:text-white text-[18px] font-medium cursor-pointer
+                ${active == link.title ? "text-customBlue" : "text-gray-400"} hover:text-customBlue text-[15px] cursor-pointer
               `}
               onClick={() => handleNavClick(link)}
             >
@@ -86,7 +86,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </nav >
   )
 }
 

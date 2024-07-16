@@ -4,6 +4,11 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        aquire: ['Aquire', 'sans-serif'],
+        aquirelight: ['AquireLight', 'sans-serif'],
+        aquirebold: ['AquireBold', 'sans-serif'],
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
@@ -11,6 +16,7 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        customBlue: "#004D80",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -19,7 +25,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/herobg.jpg')",
       },
     },
   },

@@ -13,7 +13,7 @@ const App = () => {
             path="/"
             element={
               <>
-                <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                <div className="bg-white">
                   <Navbar />
                   <Hero />
                 </div>
