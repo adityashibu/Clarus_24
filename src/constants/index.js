@@ -99,6 +99,57 @@ const about = [
     }
 ];
 
+const digitalWorkspace = [
+    {
+        title: "Apple Adoption",
+        description: "Seamlessly transition to Apple devices with our expert guidance. Embrace the Apple ecosystem—your smooth journey starts here."
+    },
+    {
+        title: "CISO Services",
+        description: "Safeguard your organization from cyber threats with our expert CISO guidance. Strengthen your security posture and ensure regulatory compliance effortlessly."
+    },
+    {
+        title: "End Compute Management",
+        description: "Maximize the potential of your Apple devices and enhance your business efficiency. Device management has never been this effortless or effective"
+    },
+    {
+        title: "Technical Services",
+        description: "Optimize your IT infrastructure with our advanced technical services. Enhance performance and reliability across your digital environment."
+    },
+    {
+        title: "Device Integration",
+        description: "Ensure a seamless and reliable transition of Apple devices into your existing IT environment. We make integration feel like a perfect fit every time."
+    },
+    {
+        title: "Consulting Services",
+        description: "Unlock your business potential with our expert consulting services. Gain strategic insights and tailored solutions to drive growth and innovation."
+    },
+    {
+        title: "Governance & Compliance",
+        description: "Stay ahead of regulations with our governance and compliance services. Ensure your organization meets all legal requirements and industry standards."
+    },
+    {
+        title: "Personified Automated Workflow",
+        description: "Customize and automate your workflows for peak performance. Efficiency meets elegance in every task you undertake."
+    },
+    {
+        title: "Manage",
+        description: "Maintain and optimize your security posture with our proactive management services. We continuously monitor, update, and improve your defenses to stay ahead of potential risks."
+    },
+    {
+        title: "Orchestrate",
+        description: "Seamlessly integrate and coordinate security measures across your entire infrastructure. We ensure all components work in harmony to provide optimal protection and efficiency."
+    },
+    {
+        title: "Design",
+        description: "Craft comprehensive security solutions tailored to your unique needs. Our expert team designs robust frameworks that protect against evolving threats."
+    },
+    {
+        title: "Helpdesk",
+        description: "Enjoy 24/7 multilingual tech support for your Mac devices. Rest easy knowing our experts are always ready to assist, no matter the hour or language."
+    },
+]
+
 const technologies = [
     {
         name: "HTML 5",
@@ -391,4 +442,4 @@ const projects = [
     },
 ];
 
-export { services, about, technologies, experiences, testimonials, projects, personalpicture };
+export { services, about, technologies, experiences, testimonials, projects, personalpicture, digitalWorkspace };

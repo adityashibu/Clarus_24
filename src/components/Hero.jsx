@@ -13,7 +13,7 @@ const Hero = () => {
           initial="hidden"
           animate="show"
         >
-          <h1 className={`${styles.heroHeadText} text-black`}>
+          <h1 className={`${styles.heroHeadText} text-black -mr-10`}>
             <span className="text-customBlue font-aquirebold text-[120%]">CLARUS24</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
