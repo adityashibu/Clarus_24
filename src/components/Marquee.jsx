@@ -11,6 +11,14 @@ const MarqueeWrapper = styled.div`
     overflow: hidden;
     user-select: none;
     border-radius: 2rem;
+
+    mask-image: linear-gradient(
+        to right, 
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 1) 10%,
+        hsl(0 0% 0% / 1) 90%,
+        hsl(0 0% 0% / 0)
+    );
 `;
 
 const scrollX = keyframes`
