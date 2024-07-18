@@ -7,6 +7,7 @@ import CopyrightFooter from './CopyrightFooter';
 import Milestones from './Milestones';
 import DigitalWorkspace from './DigitalWorkspace';
 import Team from './Team';
+import MarqueeComponent from './Marquee';
 
 export {
   Hero,
@@ -19,4 +20,5 @@ export {
   Milestones,
   DigitalWorkspace,
   Team,
+  MarqueeComponent,
 }

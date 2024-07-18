@@ -148,30 +148,33 @@ export const navLinks = [
     },
 ];
 
-const certifications = [
+const certificationsOdd = [
     { icon: acp },
-    { icon: ait },
     { icon: aws },
-    { icon: aws2 },
     { icon: az900 },
-    { icon: cc },
     { icon: cisco },
-    { icon: ciso },
     { icon: cspo },
-    { icon: dp100 },
     { icon: gc },
-    { icon: google },
     { icon: googlearc },
-    { icon: jadminpro },
     { icon: jadminprotect },
-    { icon: jamb },
     { icon: jamf100 },
-    { icon: japro },
     { icon: japrotect },
-    { icon: jconsultant },
     { icon: jcsecurity },
-    { icon: jeng },
     { icon: jproexpert },
+];
+
+const certificationsEven = [
+    { icon: ait },
+    { icon: aws2 },
+    { icon: cc },
+    { icon: ciso },
+    { icon: dp100 },
+    { icon: google },
+    { icon: jadminpro },
+    { icon: jamb },
+    { icon: japro },
+    { icon: jconsultant },
+    { icon: jeng },
     { icon: jtechpro },
 ];
 
@@ -205,4 +208,4 @@ const testimonials = [
 ];
 
 
-export { services, about, testimonials, digitalWorkspace, certifications };
+export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven };

@@ -1,13 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import { certifications } from "../constants";
 
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 
-import styled, { keyframes, css } from "styled-components";
+import MarqueeComponent from "./Marquee";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -69,13 +67,7 @@ const Team = () => {
             </motion.p>
 
             <div className="mt-20">
-                <Slider {...settings} className="p-5 items-center justify-center bg-white bg-opacity-80">
-                    {certifications.map((cert, index) => (
-                        <div key={index} className="px-2">
-                            <ServiceCard image={cert.icon} />
-                        </div>
-                    ))}
-                </Slider>
+                <MarqueeComponent />
             </div>
         </>
     );
