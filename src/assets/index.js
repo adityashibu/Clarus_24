@@ -1,46 +1,42 @@
 import logo from "./logo.svg";
+
+// For cards
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
+
+// For menus
 import menu from "./menu.svg";
 import close from "./close.svg";
-import personalpicture from "./personalpicture.jpg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+// For team certifications
+import acp from "./tech/ACP.png";
+import ait from "./tech/AIT.png";
+import aws from "./tech/aws.png";
+import aws2 from "./tech/aws2.jpg";
+import az900 from "./tech/AZ900.png";
+import cc from "./tech/cc.png";
+import cisco from "./tech/CISCO.png";
+import ciso from "./tech/CISO-Logo.jpg";
+import cspo from "./tech/CSPO.png";
+import dp100 from "./tech/DP100.png";
+import gc from "./tech/GC.png";
+import google from "./tech/Google.png";
+import googlearc from "./tech/GoogleArc.png";
+import jadminpro from "./tech/jadminpro.png";
+import jadminprotect from "./tech/jadminprotect.png";
+import jamb from "./tech/jamb.png";
+import jamf100 from "./tech/Jamf100.png";
+import japro from "./tech/japro.png";
+import japrotect from "./tech/japrotect.png";
+import jconsultant from "./tech/jconsultant.png";
+import jcsecurity from "./tech/jcsecurity.png";
+import jeng from "./tech/jeng.png";
+import jproexpert from "./tech/jproexpert.png";
+import jtechpro from "./tech/jtechpro.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import fincasa from "./company/fincasa.jpg";
-import letsgo from "./company/letsgo.jpg"
 
-import personalportfolio from "./personalportfolio.png";
-import virtualworld from "./virtualworld.png";
-import selfdrivingcar from "./selfdrivingcar.png";
-import mastermind from "./mastermind.png";
-import imageprocessing from "./imageprocessing.png";
-import valentinesday from "./valentinesday.png";
-import invoicemaster from "./invoicemaster.png";
-import aidetection from "./aidetection.png";
-import bookingmaster from "./bookingmaster.png";
-
-import resume from "./Aditya Resume.pdf";
-import vcfCard from "./Aditya S.vcf";
 
 export {
   logo,
@@ -48,38 +44,32 @@ export {
   creator,
   mobile,
   web,
-  github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  personalportfolio,
-  virtualworld,
-  selfdrivingcar,
-  mastermind,
-  imageprocessing,
-  valentinesday,
-  invoicemaster,
-  aidetection,
-  bookingmaster,
-  fincasa,
-  letsgo,
-  personalpicture,
-  resume,
-  vcfCard,
+
+
+  acp,
+  ait,
+  aws,
+  aws2,
+  az900,
+  cc,
+  cisco,
+  ciso,
+  cspo,
+  dp100,
+  gc,
+  google,
+  googlearc,
+  jadminpro,
+  jadminprotect,
+  jamb,
+  jamf100,
+  japro,
+  japrotect,
+  jconsultant,
+  jcsecurity,
+  jeng,
+  jproexpert,
+  jtechpro,
 };

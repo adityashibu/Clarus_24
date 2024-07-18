@@ -30,6 +30,7 @@
     "react-vertical-timeline-component": "^3.6.0",
     "scroll-lock": "^2.1.5",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.12",
     "three": "^0.165.0"
   },
   "devDependencies": {

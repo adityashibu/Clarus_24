@@ -37,6 +37,24 @@ const DigitalWorkspace = () => {
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: "20px",
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "10px",
+                }
+            }
+        ],
     };
 
     return (
