@@ -131,6 +131,7 @@ export const navLinks = [
     {
         id: "home",
         title: "Home",
+        url: "#home"
     },
     {
         id: "0",
