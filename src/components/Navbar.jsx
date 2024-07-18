@@ -1,98 +1,77 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+// import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
+import { navLinks } from "../constants";
+import Button from "./Button";
+import MenuSvg from "../assets/svg/MenuSvg";
+import { HamburgerMenu } from "./design/Header";
+import { useState } from "react";
 
-const Navbar = () => {
-  const [active, setActive] = useState('');
-  const [toggle, setToggle] = useState(false);
-  const navigate = useNavigate();
+const Header = () => {
+  const pathname = useLocation();
+  const [openNavigation, setOpenNavigation] = useState(false);
 
-  const handleNavClick = (nav) => {
-    if (nav.id === 'profile' || nav.id === 'projects') {
-      navigate(`/${nav.id}`);
+  const toggleNavigation = () => {
+    if (openNavigation) {
+      setOpenNavigation(false);
+      enablePageScroll();
     } else {
-      navigate(`/#${nav.id}`);
+      setOpenNavigation(true);
+      disablePageScroll();
     }
-    setActive(nav.title);
-    setToggle(false);
-  }
+  };
+
+  const handleClick = () => {
+    if (!openNavigation) return;
+
+    enablePageScroll();
+    setOpenNavigation(false);
+  };
 
   return (
-    <nav
-      className={`
-        ${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white`}
+    <div
+      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-white lg:backdrop-blur-sm ${openNavigation ? "bg-white" : "bg-white backdrop-blur-sm"
+        }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <motion.Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-          variants={fadeIn('down', 'spring')}
-          initial="hidden"
-          animate="show"
+      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+        <a className="block xl:mr-8 font-aquirebold text-customBlue text-[200%]" href="#home">
+          Clarus24
+        </a>
+
+        <nav
+          className={`${openNavigation ? "flex" : "hidden"
+            } fixed top-[5rem] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-customBlue text-[25px] font-bold cursor-pointer flex -mx-11 sm:-mx-1 font-aquirebold">Clarus24</p>
-        </motion.Link>
-
-        <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li key={link.id}
-              className={`
-                ${active == link.title ? "text-customBlue" : "text-gray-400"} hover:text-customBlue text-[15px] cursor-pointer
-              `}
-              onClick={() => handleNavClick(link)}
-            >
-              {link.id === 'profile' || link.id === 'projects' ? (
-                <Link to={`/${link.id}`}>{link.title}</Link>
-              ) : (
-                <a href={`#${link.id}`}>{link.title}</a>
-              )}
-            </li>
-          ))}
-        </ul>
-
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
-
-          <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-gray-400" : "text-white"
-                    }`}
-                  onClick={() => handleNavClick(nav)}
-                >
-                  {nav.id === 'profile' || nav.id === 'projects' ? (
-                    <Link to={`/${nav.id}`}>{nav.title}</Link>
-                  ) : (
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  )}
-                </li>
-              ))}
-            </ul>
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+            {navLinks.map((item) => (
+              <a
+                key={item.id}
+                href={item.url}
+                onClick={handleClick}
+                className={`block relative font-aquire text-2xl uppercase text-customBlue transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
+                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${item.url === pathname.hash
+                    ? "z-2 lg:text-customBlue"
+                    : "lg:text-gray-400"
+                  } lg:leading-5 lg:hover:text-customBlue xl:px-12`}
+              >
+                {item.title}
+              </a>
+            ))}
           </div>
-        </div>
-      </div>
-    </nav >
-  )
-}
 
-export default Navbar
+          <HamburgerMenu />
+        </nav>
+
+        <Button
+          className="ml-auto lg:hidden"
+          px="px-3"
+          onClick={toggleNavigation}
+        >
+          <MenuSvg openNavigation={openNavigation} />
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default Header;

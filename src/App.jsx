@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, StarsHeroCanvas, CopyrightFooter } from './components';
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, StarsHeroCanvas, CopyrightFooter, Milestones } from './components';
 import ProfilePage from './profile'
 import Projects from './projects';
 
@@ -21,6 +21,7 @@ const App = () => {
                 </div>
                 <div className="relative z-0">
                   <About />
+                  <Milestones />
                   <StarsCanvas />
                 </div>
                 {/* <Experience />

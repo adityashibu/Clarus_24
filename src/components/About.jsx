@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import Counter from './counter';
 
 import { styles } from '../styles';
-import { services, about } from '../constants'
+import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+
+import Milestones from './Milestones';
 
 const ServiceCard = ({ index, title, icon, description }) => (
   <Tilt className='xs:w-[450px] w-full'>
@@ -74,22 +75,6 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
-
-      <motion.div variants={textVariant()} className="mt-20">
-        <h2 className={styles.sectionHeadText}>Our Milestones</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
-      >
-        We team up with clients to smash through innovation roadblocks and ensure their IT environments are top-notch. Our continuous lifecycle approach adapts to any stage of your digital transformation, providing a dynamic framework for agile co-innovation and progress.
-      </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
-        {about.map((about, index) => (
-          <CounterCard key={about.title} index={index} {...about} />
         ))}
       </div>
     </>

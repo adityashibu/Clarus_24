@@ -12,6 +12,7 @@ import ProfileSection from './ProfileSection';
 import Socials from './Socials';
 import CopyrightFooter from './CopyrightFooter';
 import ProjectsPage from './ProjectsPage';
+import Milestones from './Milestones';
 
 export {
   Hero,
@@ -32,4 +33,5 @@ export {
   CopyrightFooter,
   ProjectsPage,
   StarsHeroCanvas,
+  Milestones,
 }
