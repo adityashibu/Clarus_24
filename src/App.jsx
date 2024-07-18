@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, StarsHeroCanvas, CopyrightFooter, Milestones } from './components';
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, StarsHeroCanvas, CopyrightFooter, Milestones, DigitalWorkspace } from './components';
 import ProfilePage from './profile'
 import Projects from './projects';
+import { DigitalGlitch } from 'three/examples/jsm/Addons.js';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
                   <About />
                   <Milestones />
                   <StarsCanvas />
+                  <DigitalWorkspace />
                 </div>
                 {/* <Experience />
                 <Tech />

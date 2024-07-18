@@ -13,6 +13,7 @@ import Socials from './Socials';
 import CopyrightFooter from './CopyrightFooter';
 import ProjectsPage from './ProjectsPage';
 import Milestones from './Milestones';
+import DigitalWorkspace from './DigitalWorkspace';
 
 export {
   Hero,
@@ -34,4 +35,5 @@ export {
   ProjectsPage,
   StarsHeroCanvas,
   Milestones,
+  DigitalWorkspace,
 }

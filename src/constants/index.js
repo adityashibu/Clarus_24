@@ -30,29 +30,6 @@ import {
     bookingmaster,
 } from "../assets";
 
-export const navLinks = [
-    {
-        id: "home",
-        title: "Home",
-    },
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "digital workspace",
-        title: "Digital Workspace",
-    },
-    {
-        id: "security",
-        title: "Security",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
-];
-
 const services = [
     {
         title: "Envision",
@@ -148,7 +125,34 @@ const digitalWorkspace = [
         title: "Helpdesk",
         description: "Enjoy 24/7 multilingual tech support for your Mac devices. Rest easy knowing our experts are always ready to assist, no matter the hour or language."
     },
-]
+];
+
+export const navLinks = [
+    {
+        id: "home",
+        title: "Home",
+    },
+    {
+        id: "0",
+        title: "About",
+        url: "#about"
+    },
+    {
+        id: "1",
+        title: "Digital Workspace",
+        url: "#digital-workspace",
+    },
+    {
+        id: "2",
+        title: "Security",
+        url: "#security"
+    },
+    {
+        id: "3",
+        title: "Contact",
+        url: "#contact"
+    },
+];
 
 const technologies = [
     {

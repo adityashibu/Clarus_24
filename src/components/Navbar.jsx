@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-// import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { navLinks } from "../constants";
 import Button from "./Button";
