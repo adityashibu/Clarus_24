@@ -22,16 +22,7 @@ const scrollX = keyframes`
     }
 `
 
-const scrollY = keyframes`
-    from {
-        right: translateX(0);
-    }
-    to {
-        transform: translateX(100%);
-    }
-`
-
-const MarqueeGroup = styled.div`
+const common = css`
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -42,15 +33,14 @@ const MarqueeGroup = styled.div`
     animation: ${scrollX} 30s linear infinite;
 `;
 
-const MarqueeGroup2 = styled.div`
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    white-space: nowrap;
-    border-radius: 2rem;
+const MarqueeGroup = styled.div`
+    ${common};
+`;
 
-    animation: ${scrollY} 30s linear infinite;
+const MarqueeGroup2 = styled.div`
+    ${common};
+    animation-direction: reverse;
+    animation-delay: -3s;
 `;
 
 const ImageGroup = styled.div`
@@ -90,20 +80,20 @@ const MarqueeComponent = () => {
             </MarqueeWrapper>
 
             <MarqueeWrapper>
-                <MarqueeGroup>
+                <MarqueeGroup2>
                     {certificationsEven.map((el, index) => (
                         <ImageGroup key={index}>
                             <Image src={el.icon} alt={`certification-${index}`} />
                         </ImageGroup>
                     ))}
-                </MarqueeGroup>
-                <MarqueeGroup>
+                </MarqueeGroup2>
+                <MarqueeGroup2>
                     {certificationsEven.map((el, index) => (
                         <ImageGroup key={index}>
                             <Image src={el.icon} alt={`certification-${index}`} />
                         </ImageGroup>
                     ))}
-                </MarqueeGroup>
+                </MarqueeGroup2>
             </MarqueeWrapper>
         </motion.div>
     );
