@@ -29,7 +29,7 @@ const CounterCard = ({ index, title, count }) => {
 const MileStones = () => {
     return (
         <>
-            <motion.div variants={textVariant()} className="mt-20">
+            <motion.div variants={textVariant()} className="-mt-5">
                 <h2 className={styles.sectionHeadText}>Our Milestones</h2>
             </motion.div>
 
