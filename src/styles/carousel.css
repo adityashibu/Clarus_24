@@ -1,0 +1,67 @@
+/* Custom CSS for slick carousel */
+
+/* Style for the dots */
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Base style for the dot */
+.slick-dots li button {
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Pseudo-element to create the sprinkle shape */
+.slick-dots li button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #004D80;
+    /* Custom blue color */
+    border-radius: 50%;
+}
+
+/* Adjust position of dots relative to active dot */
+.slick-dots li {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+}
+
+
+.slick-center .service-card {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.slick-slide {
+    transition: transform 0.5s;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide:not(.slick-center) {
+    filter: blur(4px);
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
