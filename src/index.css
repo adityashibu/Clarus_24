@@ -21,6 +21,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'AlteDin';
+  src: url('./assets/fonts/AlteDin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlteDinBold';
+  src: url('./assets/fonts/AlteDinBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

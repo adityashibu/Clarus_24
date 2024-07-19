@@ -8,6 +8,8 @@ import Milestones from './Milestones';
 import DigitalWorkspace from './DigitalWorkspace';
 import Team from './Team';
 import MarqueeComponent from './Marquee';
+import Partners from './Partners';
+import MarqueePartners from './MarqueePartners';
 
 export {
   Hero,
@@ -21,4 +23,6 @@ export {
   DigitalWorkspace,
   Team,
   MarqueeComponent,
+  Partners,
+  MarqueePartners,
 }

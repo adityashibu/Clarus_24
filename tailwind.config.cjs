@@ -8,6 +8,8 @@ module.exports = {
         aquire: ['Aquire', 'sans-serif'],
         aquirelight: ['AquireLight', 'sans-serif'],
         aquirebold: ['AquireBold', 'sans-serif'],
+        altedin: ['Altedin', 'sans-serif'],
+        altedinbold: ['AltedinBold', 'sans-serif']
       },
       colors: {
         primary: "#050816",

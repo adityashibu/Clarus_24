@@ -14,7 +14,7 @@ const Hero = () => {
           animate="show"
         >
           <h1 className={`${styles.heroHeadText} text-black -mr-10`}>
-            <span className="text-customBlue font-aquirebold text-[120%]">CLARUS24</span>
+            <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
             CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />

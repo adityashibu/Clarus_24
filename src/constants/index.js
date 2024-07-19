@@ -30,6 +30,12 @@ import {
     jproexpert,
     jtechpro,
 
+    apple,
+    forcepoint,
+    microsoft,
+    sophos,
+    splunk,
+
 } from "../assets";
 
 const services = [
@@ -178,7 +184,13 @@ const certificationsEven = [
     { icon: jtechpro },
 ];
 
-
+const partners = [
+    { icon: apple },
+    { icon: forcepoint },
+    { icon: microsoft },
+    { icon: sophos },
+    { icon: splunk },
+]
 
 const testimonials = [
     {
@@ -208,4 +220,4 @@ const testimonials = [
 ];
 
 
-export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven };
+export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners };
