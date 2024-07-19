@@ -43,6 +43,10 @@ import microsoft from "./partners/microsoft.png";
 import sophos from "./partners/sophos.png";
 import splunk from "./partners/splunk.jpeg";
 
+// SVG Icons
+import applelogo from "./svg/apple.svg";
+import customercare from "./svg/24x7customercare.svg";
+
 export {
   logo,
   backend,
@@ -83,4 +87,7 @@ export {
   microsoft,
   sophos,
   splunk,
+
+  applelogo,
+  customercare,
 };

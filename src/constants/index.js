@@ -30,11 +30,16 @@ import {
     jproexpert,
     jtechpro,
 
+    // Partners
     apple,
     forcepoint,
     microsoft,
     sophos,
     splunk,
+
+    // SVG Icons
+    applelogo,
+    customercare,
 
 } from "../assets";
 
@@ -83,7 +88,8 @@ const about = [
 const digitalWorkspace = [
     {
         title: "Apple Adoption",
-        description: "Seamlessly transition to Apple devices with our expert guidance. Embrace the Apple ecosystem—your smooth journey starts here."
+        description: "Seamlessly transition to Apple devices with our expert guidance. Embrace the Apple ecosystem—your smooth journey starts here.",
+        icon: applelogo,
     },
     {
         title: "CISO Services",
