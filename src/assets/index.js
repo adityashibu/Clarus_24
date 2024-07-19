@@ -41,7 +41,7 @@ import apple from "./partners/apple.png";
 import forcepoint from "./partners/forcepoint.png";
 import microsoft from "./partners/microsoft.png";
 import sophos from "./partners/sophos.png";
-import splunk from "./partners/splunk.jpeg";
+import splunk from "./partners/splunk.png";
 
 // SVG Icons
 import applelogo from "./svg/apple.svg";

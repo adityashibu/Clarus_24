@@ -19,12 +19,12 @@ const Partners = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
             >
-                Our expertise is widely recognized through industry and partner certifications, highlighting our professional excellence.
+                We are proud to be partnered with the following companies. Our partnerships allow us to provide the best solutions to our clients and help them achieve their business goals.
             </motion.p>
 
-            <div className="mt-20">
+            <motion.div variants={fadeIn("up", "spring")} className="mt-20">
                 <MarqueePartners />
-            </div>
+            </motion.div>
         </>
     );
 };

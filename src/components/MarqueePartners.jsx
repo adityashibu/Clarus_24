@@ -38,14 +38,10 @@ const common = css`
     white-space: nowrap;
     border-radius: 2rem;
 
-    animation: ${scrollX} 30s linear infinite;
+    animation: ${scrollX} 10s linear infinite;
 `;
 
 const MarqueeGroup = styled.div`
-    ${common};
-`;
-
-const MarqueeGroup2 = styled.div`
     ${common};
 `;
 
