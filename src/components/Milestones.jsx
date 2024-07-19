@@ -30,7 +30,7 @@ const MileStones = () => {
     return (
         <>
             <motion.div variants={textVariant()} className="-mt-5">
-                <h2 className={styles.sectionHeadText}>Our Milestones</h2>
+                <h2 className={styles.sectionHeadText}>About Us</h2>
             </motion.div>
 
             <motion.p
@@ -48,4 +48,4 @@ const MileStones = () => {
     );
 }
 
-export default SectionWrapper(MileStones, "milestones");
+export default SectionWrapper(MileStones, "about-us");

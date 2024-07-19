@@ -56,7 +56,7 @@ const Team = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Our Team's Certification</h2>
+                <h2 className={styles.sectionHeadText}>Our Team's Expertise</h2>
             </motion.div>
 
             <motion.p
