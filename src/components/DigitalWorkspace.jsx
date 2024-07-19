@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from 'react-slick';
 import { useMediaQuery } from 'react-responsive';
 
 import { styles } from '../styles';
@@ -14,16 +13,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ title, description }) => {
+const ServiceCard = ({ title, description, index }) => {
     const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
 
     return (
         <motion.div
-            variants={fadeIn("up", "spring")}
+            variants={fadeIn("up", "spring", index * 0.2, 0.75)}
             className=""
         >
             {isSmallScreen ? (
-                <div className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue">
+                <div className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue shadow-card">
                     <div className="mt-5">
                         <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
                         <p className="mt-2 text-black text-[14px]">{description}</p>
@@ -36,7 +35,7 @@ const ServiceCard = ({ title, description }) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue"
+                    className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue shadow-card"
                 >
                     <div className="mt-5">
                         <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
@@ -67,17 +66,17 @@ const DigitalWorkspace = () => {
             </div>
             <div className="mt-5 flex flex-wrap gap-7 justify-center">
                 {digitalWorkspace.slice(3, 6).map((about, index) => (
-                    <ServiceCard key={about.title} index={index} {...about} />
+                    <ServiceCard key={about.title} index={index + 3} {...about} />
                 ))}
             </div>
             <div className="mt-5 flex flex-wrap gap-7 justify-center">
                 {digitalWorkspace.slice(6, 9).map((about, index) => (
-                    <ServiceCard key={about.title} index={index} {...about} />
+                    <ServiceCard key={about.title} index={index + 6} {...about} />
                 ))}
             </div>
             <div className="mt-5 flex flex-wrap gap-7 justify-center">
                 {digitalWorkspace.slice(9, 12).map((about, index) => (
-                    <ServiceCard key={about.title} index={index} {...about} />
+                    <ServiceCard key={about.title} index={index + 9} {...about} />
                 ))}
             </div>
         </>
