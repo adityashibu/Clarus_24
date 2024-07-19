@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ name, description }) => {
+const ServiceCard = ({ title, description }) => {
     return (
         <motion.div
             variants={fadeIn("up", "spring")}
@@ -25,11 +25,11 @@ const ServiceCard = ({ name, description }) => {
                     scale: 1,
                     speed: 450
                 }}
-                className="bg-[#ffffff] p-5 rounded-2xl sm:w-[360px] w-full border-2 border-customBlue"
+                className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue"
             >
 
                 <div className="mt-5">
-                    <h3 className="text-customBlue font-bold text-[24px]">{name}</h3>
+                    <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
                     <p className="mt-2 text-black text-[14px]">{description}</p>
                 </div>
 
@@ -51,12 +51,17 @@ const DigitalWorkspace = () => {
                 </motion.p>
             </motion.div>
             <div className="mt-20 flex flex-wrap gap-7 justify-center">
-                {digitalWorkspace.splice(0, 3).map((about, index) => (
+                {digitalWorkspace.slice(0, 3).map((about, index) => (
                     <ServiceCard key={about.title} index={index} {...about} />
                 ))}
             </div>
-            <div className="mt-20 flex flex-wrap gap-7 justify-center">
-                {digitalWorkspace.splice(3, 6).map((about, index) => (
+            <div className="mt-5 flex flex-wrap gap-7 justify-center">
+                {digitalWorkspace.slice(3, 6).map((about, index) => (
+                    <ServiceCard key={about.title} index={index} {...about} />
+                ))}
+            </div>
+            <div className="mt-5 flex flex-wrap gap-7 justify-center">
+                {digitalWorkspace.slice(6, 9).map((about, index) => (
                     <ServiceCard key={about.title} index={index} {...about} />
                 ))}
             </div>
