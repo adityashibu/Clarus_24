@@ -47,8 +47,6 @@ const MarqueeGroup = styled.div`
 
 const MarqueeGroup2 = styled.div`
     ${common};
-    animation-direction: reverse;
-    animation-delay: -3s;
 `;
 
 const ImageGroup = styled.div`
