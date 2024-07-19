@@ -56,13 +56,13 @@ export const navLinks = [
     },
     {
         id: "1",
-        title: "FAQs",
-        url: "#faqs",
+        title: "Services",
+        url: "#services",
     },
     {
         id: "2",
-        title: "Services",
-        url: "#services",
+        title: "FAQs",
+        url: "#faqs",
     },
     {
         id: "3",
