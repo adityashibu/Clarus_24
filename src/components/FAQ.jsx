@@ -60,7 +60,7 @@ const FAQAccordion = () => {
                             animate={{ height: activeIndex === index ? 'auto' : 0 }}
                             className="overflow-hidden"
                         >
-                            <p className="faq-answer text-black text-[15px] pb-3">{faq.answer}</p>
+                            <p className="faq-answer text-black text-[15px] pb-3 pl-3 pr-3">{faq.answer}</p>
                         </motion.div>
                     </div>
                 ))}
