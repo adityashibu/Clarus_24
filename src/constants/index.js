@@ -43,6 +43,29 @@ import {
 
 } from "../assets";
 
+export const navLinks = [
+    {
+        id: "home",
+        title: "Home",
+        url: "#home"
+    },
+    {
+        id: "0",
+        title: "About",
+        url: "#about-us"
+    },
+    {
+        id: "1",
+        title: "Services",
+        url: "#services",
+    },
+    {
+        id: "2",
+        title: "Contact",
+        url: "#contact"
+    },
+];
+
 const services = [
     {
         title: "Envision",
@@ -137,29 +160,6 @@ const digitalWorkspace = [
     },
 ];
 
-export const navLinks = [
-    {
-        id: "home",
-        title: "Home",
-        url: "#home"
-    },
-    {
-        id: "0",
-        title: "About",
-        url: "#about-us"
-    },
-    {
-        id: "1",
-        title: "Services",
-        url: "#services",
-    },
-    {
-        id: "2",
-        title: "Contact",
-        url: "#contact"
-    },
-];
-
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -225,5 +225,36 @@ const testimonials = [
     },
 ];
 
+const faqs = [
+    {
+        question: "What service does Clarus24 offer?",
+        answer: "Clarus24 provides expert consulting, cybersecurity solutions, SOC Operations and device management services, specializing in Apple products. Our goal is to enhance your business's security, efficiency, and productivity.",
+    },
+    {
+        question: "How do you ensure that your consulting services are tailored to our needs?",
+        answer: "We start with a comprehensive assessment of your current IT environment and business objectives. This allows us to develop customized strategies and solutions that align with your specific goals and requirements.",
+    },
+    {
+        question: "Why should my business choose Clarus24's SOC services?",
+        answer: "Clarus24's SOC offers advanced threat detection capabilities, a team of experienced cybersecurity professionals, and cutting-edge technology to protect your business from cyber threats efficiently and effectively.",
+    },
+    {
+        question: "How does Clarus24's SOC detect and respond to threats?",
+        answer: "We utilize advanced SIEM systems, intrusion detection systems, behavioral analysis, and threat intelligence, combined with machine learning algorithms, to detect threats. Our team responds swiftly to mitigate risks and minimize the impact of security incidents.",
+    },
+    {
+        question: "How does Clarus24 improve device security?",
+        answer: "Clarus24 improves security by enforcing encryption, enabling remote lock and wipe capabilities, managing app distribution, and providing real-time monitoring and alerts for potential security threats.",
+    },
+    {
+        question: "Why is Clarus24's endpoint device management essential for my business?",
+        answer: "Our endpoint device management service protects sensitive data, ensures regulatory compliance, prevents unauthorized access, and mitigates risks associated with endpoint vulnerabilities, keeping your business secure.",
+    },
+    {
+        question: "Do you partner with other companies to provide your services?",
+        answer: "We collaborate with leading technology and security partners to offer comprehensive and cutting-edge solutions. Our partnerships enable us to deliver high-quality services and support to our clients.",
+    },
+];
 
-export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners };
+
+export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs };

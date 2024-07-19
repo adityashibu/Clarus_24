@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { About, Hero, Navbar, StarsCanvas, Milestones, DigitalWorkspace, Team } from './components';
+import { About, Hero, Navbar, StarsCanvas, Milestones, DigitalWorkspace, Team, FAQAccordion } from './components';
 import Partners from './components/Partners';
 import { Analytics } from "@vercel/analytics/react"
 
@@ -26,6 +26,7 @@ const App = () => {
                   <DigitalWorkspace />
                   <Team />
                   <Partners />
+                  <FAQAccordion />
                 </div>
                 <Analytics />
               </>

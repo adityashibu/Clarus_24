@@ -10,6 +10,7 @@ import Team from './Team';
 import MarqueeComponent from './Marquee';
 import Partners from './Partners';
 import MarqueePartners from './MarqueePartners';
+import FAQAccordion from './FAQ';
 
 export {
   Hero,
@@ -25,4 +26,5 @@ export {
   MarqueeComponent,
   Partners,
   MarqueePartners,
+  FAQAccordion,
 }
