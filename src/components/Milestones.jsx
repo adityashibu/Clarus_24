@@ -37,7 +37,7 @@ const MileStones = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
             >
-                We team up with clients to smash through innovation roadblocks and ensure their IT environments are top-notch. Our continuous lifecycle approach adapts to any stage of your digital transformation, providing a dynamic framework for agile co-innovation and progress.
+                Clarus24 excels in designing, managing, and running modern, efficient, and reliable technology infrastructure. We're committed to advancing critical systems that drive human progress. By partnering with the best, investing in our business, and collaborating closely with our customers, we unlock their full potential
             </motion.p>
             <div className="mt-20 flex flex-wrap gap-10 justify-center">
                 {about.map((about, index) => (
