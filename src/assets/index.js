@@ -47,6 +47,9 @@ import splunk from "./partners/splunk.png";
 import applelogo from "./svg/apple.svg";
 import customercare from "./svg/24x7customercare.svg";
 
+// Lottie Files
+import database from "./lotties/database.json";
+
 export {
   logo,
   backend,
@@ -90,4 +93,6 @@ export {
 
   applelogo,
   customercare,
+
+  database,
 };

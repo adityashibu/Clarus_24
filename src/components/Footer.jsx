@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { navLinks, digitalWorkspaceFooter } from "../constants"; // Adjust the path if needed
+import { navLinks, digitalWorkspaceFooter } from "../constants";
 
 const Footer = () => {
     return (
