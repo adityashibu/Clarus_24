@@ -108,7 +108,7 @@ const about = [
         count: 700,
     },
     {
-        title: "Hard Workers",
+        title: "Smart Workers",
         count: 7,
     }
 ];
