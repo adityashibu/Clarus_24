@@ -47,25 +47,16 @@ const ServiceCard = ({ title, description, index }) => {
     );
 }
 
-const DigitalWorkspace = () => {
+const DigitalWorkspace1 = () => {
     return (
         <>
-            <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Digital Workspace</h2>
-                <motion.p
-                    variants={fadeIn("", "", 0.1, 1)}
-                    className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
-                >
-                    We partner with business to eliminate innovation barriers and enable modern IT management. Our continuous lifecycle approach meets businesses at their current stage of digital transformation, providing a framework for agile co-innovation:
-                </motion.p>
-            </motion.div>
-            <div className="mt-20 flex flex-wrap gap-7 justify-center">
-                {digitalWorkspace.slice(0, 3).map((about, index) => (
-                    <ServiceCard key={about.title} index={index} {...about} />
+            <div className="-mt-20 flex flex-wrap gap-7 justify-center">
+                {digitalWorkspace.slice(3, 6).map((about, index) => (
+                    <ServiceCard key={about.title} index={index + 3} {...about} />
                 ))}
             </div>
         </>
     );
 }
 
-export default SectionWrapper(DigitalWorkspace, "digital-workspace");
+export default SectionWrapper(DigitalWorkspace1, "digital-workspace1");

@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Milestones from './Milestones';
 import DigitalWorkspace from './DigitalWorkspace';
+import DigitalWorkspace1 from './DigitalWorkspace1';
 import Team from './Team';
 import MarqueeComponent from './Marquee';
 import Partners from './Partners';
@@ -22,6 +23,7 @@ export {
   StarsCanvas,
   Milestones,
   DigitalWorkspace,
+  DigitalWorkspace1,
   Team,
   MarqueeComponent,
   Partners,

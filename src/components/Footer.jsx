@@ -29,7 +29,7 @@ const Footer = () => {
                     <ul>
                         {navLinks.map((link) => (
                             <li key={link.id} className="mb-2">
-                                <a href={link.url} className="hover:underline">
+                                <a href={link.url} className="underline-animation hover:text-white">
                                     {`> ${link.title}`}
                                 </a>
                             </li>
