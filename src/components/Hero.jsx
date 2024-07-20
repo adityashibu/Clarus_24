@@ -16,31 +16,34 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex items-center -mt-20`}>
+    <section className="relative w-full h-screen mx-auto flex justify-center items-center">
+      <div className={`${styles.paddingX} flex flex-col md:flex-row items-center gap-8`}>
         <motion.div
           variants={fadeIn('up', 'spring', 0.5)}
           initial="hidden"
           animate="show"
-          className="flex flex-col md:flex-row items-center gap-8 md:-ml-20"
+          className="flex flex-col items-center md:items-start text-center md:text-left"
         >
-          <div className="flex flex-col md:mr-12">
-            <h1 className={`${styles.heroHeadText} text-black`}>
-              <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
-              CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />
-            </p>
-          </div>
+          <h1 className={`${styles.heroHeadText} text-black`}>
+            <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
+            CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />
+          </p>
+        </motion.div>
 
-          <div className="relative flex-shrink-0 md:pl-20 md:opacity-100 md:z-10 z-0">
-            <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px]">
-              <Lottie
-                options={defaultOptions}
-                width="100%"
-                height="100%"
-              />
-            </div>
+        <motion.div
+          variants={fadeIn('up', 'spring', 0.5)}
+          initial="hidden"
+          animate="show"
+          className="relative flex-shrink-0 md:opacity-100 z-10"
+        >
+          <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px]">
+            <Lottie
+              options={defaultOptions}
+              width="100%"
+              height="100%"
+            />
           </div>
         </motion.div>
       </div>
