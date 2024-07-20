@@ -36,7 +36,7 @@ const FAQAccordion = () => {
                             className="faq-question cursor-pointer py-3 flex justify-between items-center"
                             onClick={() => toggleFAQ(index)}
                         >
-                            <h3 className="text-customBlue font-bold text-lg font-aquire text-[15px] sm:text-[20px] pr-3">{faq.question}</h3>
+                            <h3 className="text-customBlue font-bold text-lg font-aquirelight text-[15px] sm:text-[20px] pr-3">{faq.question}</h3>
                             <svg
                                 width="24"
                                 height="24"
