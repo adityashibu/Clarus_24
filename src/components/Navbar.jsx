@@ -74,9 +74,9 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-aquire text-2xl uppercase transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
+                className={`nav-link block relative font-aquire text-2xl uppercase transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
                   } px-6 py-6 md:py-8 lg:mr-4 lg:text-xs lg:font-semibold ${item.id === activeSection || item.url === hash.substring(1)
-                    ? "text-customBlue"
+                    ? "text-customBlue active"
                     : "text-gray-400"
                   } lg:leading-5 lg:hover:text-customBlue xl:px-12`}
               >
