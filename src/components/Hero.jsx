@@ -22,7 +22,7 @@ const Hero = () => {
           variants={fadeIn('up', 'spring', 0.5)}
           initial="hidden"
           animate="show"
-          className="flex flex-col md:flex-row items-center gap-8 -ml-20"
+          className="flex flex-col md:flex-row items-center gap-8 md:-ml-20"
         >
           <div className="flex flex-col md:mr-12">
             <h1 className={`${styles.heroHeadText} text-black`}>
@@ -33,12 +33,14 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="relative flex-shrink-0 md:pl-20 md:opacity-100 opacity-50 md:z-10 z-0">
-            <Lottie
-              options={defaultOptions}
-              height={600}
-              width={600}
-            />
+          <div className="relative flex-shrink-0 md:pl-20 md:opacity-100 md:z-10 z-0">
+            <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px]">
+              <Lottie
+                options={defaultOptions}
+                width="100%"
+                height="100%"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
