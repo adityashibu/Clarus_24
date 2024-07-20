@@ -1,24 +1,45 @@
 import { motion } from 'framer-motion';
-
-import { styles } from '../styles'
+import { styles } from '../styles';
 import { fadeIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import Lottie from 'react-lottie';
+import { devicemgmt } from '../assets';
 
 const Hero = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: devicemgmt,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex flex-row gap-5 items-center`}>
+      <div className={`${styles.paddingX} absolute inset-0 max-w-7xl mx-auto flex items-center -mt-20`}>
         <motion.div
           variants={fadeIn('up', 'spring', 0.5)}
           initial="hidden"
           animate="show"
+          className="flex flex-col md:flex-row items-center gap-8"
         >
-          <h1 className={`${styles.heroHeadText} text-black -mr-10`}>
-            <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
-            CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />
-          </p>
+          <div className="flex flex-col md:mr-12">
+            <h1 className={`${styles.heroHeadText} text-black`}>
+              <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-black-100 font-light font-aquirelight`}>
+              CRAFTING SECURITY, CURATING EXPERIENCE<br className='sm:block hidden' />
+            </p>
+          </div>
+
+          {/* <div className="relative flex-shrink-0 md:pl-20 md:opacity-100 opacity-50 md:z-10 z-0">
+            <Lottie
+              options={defaultOptions}
+              height={600}
+              width={600}
+            />
+          </div> */}
         </motion.div>
       </div>
 
@@ -39,8 +60,8 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section >
-  )
+    </section>
+  );
 }
 
 export default SectionWrapper(Hero, "home");

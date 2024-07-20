@@ -49,6 +49,10 @@ import customercare from "./svg/24x7customercare.svg";
 
 // Lottie Files
 import database from "./lotties/database.json";
+import devicemgmt from "./lotties/DeviceMgmt.json";
+
+// Clarus Video
+import clarus from "./clarus24_white.mp4"
 
 export {
   logo,
@@ -95,4 +99,7 @@ export {
   customercare,
 
   database,
+  devicemgmt,
+
+  clarus,
 };

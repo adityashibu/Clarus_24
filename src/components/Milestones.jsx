@@ -28,7 +28,7 @@ const CounterCard = ({ index, title, count }) => {
 
 const MileStones = () => {
     return (
-        <>
+        <div id="about">
             <motion.div variants={textVariant()} className="-mt-5">
                 <h2 className={styles.sectionHeadText}>About Us</h2>
             </motion.div>
@@ -44,7 +44,7 @@ const MileStones = () => {
                     <CounterCard key={about.title} index={index} {...about} />
                 ))}
             </div>
-        </>
+        </div>
     );
 }
 
