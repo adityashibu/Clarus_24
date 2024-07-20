@@ -10,7 +10,7 @@ const Counter = ({ endCount }) => {
             }
         };
 
-        const interval = setInterval(increment, 10); // Adjust interval speed as needed
+        const interval = setInterval(increment, 20);
 
         return () => clearInterval(interval);
     }, [count, endCount]);
