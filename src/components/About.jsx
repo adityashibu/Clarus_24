@@ -70,7 +70,7 @@ const About = () => {
   };
 
   return (
-    <>
+    <section>
       <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>Clarus24</h2>
       </motion.div>
@@ -91,7 +91,7 @@ const About = () => {
           ))}
         </Slider>
       </div>
-    </>
+    </section>
   );
 }
 

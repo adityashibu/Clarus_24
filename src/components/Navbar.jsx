@@ -1,15 +1,15 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
+import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
 
 const Header = () => {
-  const pathname = useLocation();
+  const { hash } = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -28,6 +28,32 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  useEffect(() => {
+    const sections = navLinks.map(link => document.querySelector(link.url));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach(section => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, [navLinks]);
+
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-white lg:backdrop-blur-sm ${openNavigation ? "bg-white" : "bg-white backdrop-blur-sm"
@@ -39,19 +65,19 @@ const Header = () => {
         </a>
 
         <nav
-          className={`fixed top-[5rem] right-0 bottom-0 bg-white lg:static lg:flex lg:justify-end lg:bg-transparent lg:mx-auto ${openNavigation ? "flex" : "hidden"
+          className={`fixed top-[5rem] left-0 right-0 bottom-0 bg-white lg:static lg:flex lg:mx-auto lg:bg-transparent ${openNavigation ? "flex" : "hidden"
             }`}
         >
-          <div className="relative z-2 flex flex-col lg:flex-row lg:items-center lg:justify-end lg:space-x-4">
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row lg:justify-end lg:space-x-4">
             {navLinks.map((item) => (
               <a
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-aquire text-2xl uppercase text-customBlue transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
-                  } px-6 py-6 md:py-8 lg:text-xs lg:font-semibold ${item.url === pathname.hash
-                    ? "z-2 lg:text-customBlue"
-                    : "lg:text-gray-400"
+                className={`block relative font-aquire text-2xl uppercase transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
+                  } px-6 py-6 md:py-8 lg:mr-4 lg:text-xs lg:font-semibold ${item.id === activeSection || item.url === hash.substring(1)
+                    ? "text-customBlue"
+                    : "text-gray-400"
                   } lg:leading-5 lg:hover:text-customBlue xl:px-12`}
               >
                 {item.title}
