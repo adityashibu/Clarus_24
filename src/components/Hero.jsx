@@ -22,7 +22,7 @@ const Hero = () => {
           variants={fadeIn('up', 'spring', 0.5)}
           initial="hidden"
           animate="show"
-          className="flex flex-col items-center md:items-start text-center md:text-left"
+          className="flex flex-col items-center md:items-start text-center md:text-left md:mr-20"
         >
           <h1 className={`${styles.heroHeadText} text-black`}>
             <span className="text-customBlue font-aquirebold text-[120%]">CLARUS<span className="font-altedin">24</span></span>
