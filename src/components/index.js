@@ -3,7 +3,6 @@ import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
 import Contact from './Contact';
-import CopyrightFooter from './CopyrightFooter';
 import Milestones from './Milestones';
 import DigitalWorkspace from './DigitalWorkspace';
 import Team from './Team';
@@ -11,6 +10,8 @@ import MarqueeComponent from './Marquee';
 import Partners from './Partners';
 import MarqueePartners from './MarqueePartners';
 import FAQAccordion from './FAQ';
+import Footer from './Footer';
+import ScrollUp from './ScrollUp';
 
 export {
   Hero,
@@ -19,7 +20,6 @@ export {
   Contact,
   EarthCanvas,
   StarsCanvas,
-  CopyrightFooter,
   Milestones,
   DigitalWorkspace,
   Team,
@@ -27,4 +27,6 @@ export {
   Partners,
   MarqueePartners,
   FAQAccordion,
+  Footer,
+  ScrollUp,
 }

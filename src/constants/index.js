@@ -165,6 +165,30 @@ const digitalWorkspace = [
     },
 ];
 
+const digitalWorkspaceFooter = [
+    {
+        title: "Apple Adoption",
+    },
+    {
+        title: "End Compute Management",
+    },
+    {
+        title: "Device Integration",
+    },
+    {
+        title: "Consulting Services",
+    },
+    {
+        title: "Personified Automated Workflow",
+    },
+    {
+        title: "Design",
+    },
+    {
+        title: "Helpdesk",
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -262,4 +286,4 @@ const faqs = [
 ];
 
 
-export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs };
+export { services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter };
