@@ -12,7 +12,7 @@ const Partners = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Our Partners</h2>
+                <h2 className={styles.sectionHeadText}>Our Alliances</h2>
             </motion.div>
 
             <motion.p
