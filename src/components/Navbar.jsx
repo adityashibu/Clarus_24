@@ -61,7 +61,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block xl:mr-8 font-aquirebold text-customBlue text-[200%]" href="#home">
-          Clarus24
+          Clarus<span className="font-altedinbold">24</span>
         </a>
 
         <nav

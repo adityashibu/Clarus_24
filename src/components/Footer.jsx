@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
                 {/* First Column */}
                 <div className="flex-1">
-                    <h2 className="text-5xl font-bold mb-4 font-aquirebold">Clarus24</h2>
+                    <h2 className="text-5xl font-bold mb-4 font-aquirebold">Clarus<span className="font-altedinbold">24</span></h2>
                     <p className="mb-4">
                         Reg RMZ Latitude Commercial 10th Floor,<br />
                         Wework Bellary Road,<br />
