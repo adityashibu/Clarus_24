@@ -45,6 +45,18 @@ export const links = [
           { name: "Threat and Risk Intelligence", link: "/tri" },
         ],
       },
+      {
+        Head: "Managed Risk",
+        sublink: [
+          { name: "Penetration Testing", link: "/pentesting" },
+          { name: "Vulnerability Management as a Service", link: "/vmaas" },
+          { name: "CISO as a Service", link: "/ciso" },
+          { name: "Cyber Security Controls Assessment", link: "/cybersecurity-controls" },
+          { name: "Red Team Assessment", link: "/red-team-assessment" },
+          { name: "Web Application Security Testing", link: "/webapplication-security" },
+          { name: "Phishing Attack Simulation", link: "/phishing-simulation" },
+        ],
+      },
     ],
   },
 ];
