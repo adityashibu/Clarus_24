@@ -36,7 +36,7 @@ const NavLinks = () => {
                 <div className="grid grid-cols-4 gap-10">
                   {link.sublinks.map((mysublinks, mysublinksid) => (
                     <div key={mysublinksid}>
-                      <h1 className="text-2xl font-semibold text-customBlue font-aquire -mt-">
+                      <h1 className="text-2xl font-semibold text-customBlue font-aquire -mt-5">
                         {mysublinks.Head}
                       </h1>
                       <div className="mt-5">
