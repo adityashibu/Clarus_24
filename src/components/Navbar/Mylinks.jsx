@@ -20,6 +20,31 @@ export const links = [
           { name: "Helpdesk", link: "/helpdesk" },
         ],
       },
+      {
+        Head: "Managed Defense",
+        sublink: [
+          { name: "Detection and Response", link: "/mdr" },
+          { name: "Defense for AWS", link: "/defense-aws" },
+          { name: "Extended Detection and Response", link: "/xdr" },
+          { name: "Network Detection and Response", link: "/network-detection" },
+          { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
+          { name: "Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
+          { name: "Digital Forensics & Incident Response", link: "/digital-forensics" },
+          { name: "User Behaviour Analytics", link: "/user-analytics" },
+          { name: "Network Flow Analytics", link: "/network-analytics" },
+        ],
+      },
+      {
+        Head: "Managed Security",
+        sublink: [
+          { name: "Managed Firewall", link: "/firewall" },
+          { name: "Managed Endpoint Protection", link: "/epp" },
+          { name: "Managed Endpoint Security", link: "/endpoint-security" },
+          { name: "Darktrace/Email as a Service", link: "/darktrace" },
+          { name: "Managed Data Security", link: "/data-security" },
+          { name: "Threat and Risk Intelligence", link: "/tri" },
+        ],
+      },
     ],
   },
 ];

@@ -5,6 +5,7 @@ import { links } from "./Mylinks";
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+
   return (
     <>
       {links.map((link, linkid) => (
@@ -29,31 +30,29 @@ const NavLinks = () => {
               </span>
             </h1>
             {link.submenu && (
-              <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
-                  <div className="py-3">
-                  </div>
-                  <div className="bg-white p-5 grid grid-cols-1 gap-10 rounded-2xl border-2 border-customBlue bg-opacity-90">
-                    {link.sublinks.map((mysublinks, mysublinksid) => (
-                      <div key={mysublinksid}>
-                        <h1 className="text-2xl font-semibold text-customBlue font-aquire">
-                          {mysublinks.Head}
-                        </h1>
-                        <div className="mt-5">
-                          {mysublinks.sublink.map((slink, slinkid) => (
-                            <li className="text-sm text-gray-600 my-2.5" key={slinkid}>
-                              <Link
-                                to={slink.link}
-                                className="hover:text-primary"
-                              >
-                                {slink.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </div>
+              <div className="absolute top-20 hidden group-hover:md:block hover:md:block centered-menu">
+                <div className="py-3">
+                </div>
+                <div className="grid grid-cols-3 gap-10">
+                  {link.sublinks.map((mysublinks, mysublinksid) => (
+                    <div key={mysublinksid}>
+                      <h1 className="text-2xl font-semibold text-customBlue font-aquire -mt-">
+                        {mysublinks.Head}
+                      </h1>
+                      <div className="mt-5">
+                        {mysublinks.sublink.map((slink, slinkid) => (
+                          <li className="text-sm text-gray-600 my-2.5" key={slinkid}>
+                            <Link
+                              to={slink.link}
+                              className="hover:text-primary"
+                            >
+                              {slink.name}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             )}

@@ -100,6 +100,29 @@
   transform-origin: bottom left;
 }
 
+/* In your CSS file */
+.centered-menu {
+  position: absolute;
+  top: 90%;
+  /* Adjust to position it below the navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  /* Adjust as needed */
+  max-width: 1000px;
+  /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.98);
+  /* Semi-transparent white */
+  border-radius: 30px;
+  border: 2px solid #004D80;
+  /* Replace with your custom blue color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+}
+
+
 * {
   margin: 0;
   padding: 0;

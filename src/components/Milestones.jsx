@@ -48,4 +48,4 @@ const MileStones = () => {
     );
 }
 
-export default SectionWrapper(MileStones, "about-us");
+export default SectionWrapper(MileStones, "milestones");
