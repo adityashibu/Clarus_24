@@ -38,7 +38,7 @@ const Hero = () => {
           animate="show"
           className="relative flex-shrink-0 md:opacity-100 z-10"
         >
-          <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px]">
+          <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px] pointer-events-none">
             <Lottie
               options={defaultOptions}
               width="100%"
