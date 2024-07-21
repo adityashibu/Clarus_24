@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto flex justify-center items-center">
+    <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[70px] md:pt-0">
       <div className={`${styles.paddingX} flex flex-col md:flex-row items-center gap-8`}>
         <motion.div
           variants={fadeIn('up', 'spring', 0.5)}
