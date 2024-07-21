@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
+import useIntersectionObserver from "../../hooks/useIntersectionOvserver";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const activeSection = useIntersectionObserver(navLinks);
+
+  const firstTwoLinks = navLinks.slice(0, 2);
+  const contact = navLinks[2];
 
   return (
     <nav className="bg-customBlue z-50 md:fixed md:w-full">
@@ -21,40 +27,31 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
-          <li className="cursor-pointer">
-            <ScrollLink
-              to="home"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              Home
-            </ScrollLink>
-          </li>
-          <li className="cursor-pointer">
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              About
-            </ScrollLink>
-          </li>
+          {firstTwoLinks.map((link) => (
+            <li key={link.id} className="cursor-pointer">
+              <ScrollLink
+                to={link.url.substring(1)}  // Remove the leading "#" for react-scroll
+                smooth={true}
+                duration={500}
+                className={`py-7 px-3 inline-block text-white font-aquirebold navbar-link ${link.url.substring(1) === activeSection ? "active" : ""}`}
+              >
+                {link.title}
+              </ScrollLink>
+            </li>
+          ))}
           <NavLinks />
-          <li className="cursor-pointer">
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              Contact
-            </ScrollLink>
-          </li>
+          {contact && (
+            <li key={contact.id} className="cursor-pointer">
+              <ScrollLink
+                to={contact.url.substring(1)}  // Remove the leading "#" for react-scroll
+                smooth={true}
+                duration={500}
+                className={`py-7 px-3 inline-block text-white font-aquirebold navbar-link ${contact.url.substring(1) === activeSection ? "active" : ""}`}
+              >
+                {contact.title}
+              </ScrollLink>
+            </li>
+          )}
         </ul>
         <div className="md:block hidden">
           <Socials />
@@ -63,8 +60,8 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-            md:hidden bg-customBlue fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 z-50
-            transition-transform duration-500 ${open ? "translate-x-0" : "translate-x-[-100%]"}
+            md:hidden bg-customBlue fixed top-0 left-0 w-full h-full overflow-y-auto py-24 pl-4 z-50
+            transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}
           `}
         >
           <div
@@ -73,40 +70,33 @@ const Navbar = () => {
           >
             <ion-icon name="close"></ion-icon>
           </div>
-          <li>
-            <ScrollLink
-              to="home"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              Home
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              About
-            </ScrollLink>
-          </li>
+          {firstTwoLinks.map((link) => (
+            <li key={link.id}>
+              <ScrollLink
+                to={link.url.substring(1)}  // Remove the leading "#" for react-scroll
+                smooth={true}
+                duration={500}
+                className={`py-7 px-3 inline-block text-white font-aquirebold`}
+                onClick={() => setOpen(false)}
+              >
+                {link.title}
+              </ScrollLink>
+            </li>
+          ))}
           <NavLinks />
-          <li>
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="py-7 px-3 inline-block text-white font-aquirebold"
-              activeClass="underline"
-            >
-              Contact
-            </ScrollLink>
-          </li>
+          {contact && (
+            <li key={contact.id}>
+              <ScrollLink
+                to={contact.url.substring(1)}  // Remove the leading "#" for react-scroll
+                smooth={true}
+                duration={500}
+                className={`py-7 px-3 inline-block text-white font-aquirebold`}
+                onClick={() => setOpen(false)}
+              >
+                {contact.title}
+              </ScrollLink>
+            </li>
+          )}
           <div className="py-5 px-3">
             <Socials />
           </div>
