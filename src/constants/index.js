@@ -47,17 +47,20 @@ export const navLinks = [
     {
         id: "home",
         title: "Home",
-        url: "#home"
+        url: "#home",
+        footerurl: "home"
     },
     {
         id: "about-us",
         title: "About",
-        url: "#about-us"
+        url: "#about-us",
+        footerurl: "about-us"
     },
     {
         id: "contact",
         title: "Contact",
-        url: "#contact"
+        url: "#contact",
+        footerurl: "contact"
     },
 ];
 

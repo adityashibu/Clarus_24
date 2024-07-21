@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { navLinks, digitalWorkspaceFooter } from "../constants";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
     return (
@@ -29,9 +30,14 @@ const Footer = () => {
                     <ul>
                         {navLinks.map((link) => (
                             <li key={link.id} className="mb-2">
-                                <a href={link.url} className="underline-animation hover:text-white">
+                                <ScrollLink
+                                    to={link.footerurl}
+                                    smooth={true}
+                                    duration={500}
+                                    className="underline-animation hover:text-white cursor-pointer"
+                                >
                                     {`> ${link.title}`}
-                                </a>
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>

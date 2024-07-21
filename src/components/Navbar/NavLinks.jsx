@@ -29,13 +29,13 @@ const NavLinks = () => {
               </span>
             </h1>
             {link.submenu && (
-              <div className="absolute top-20 hidden group-hover:md:block hover:md:block centered-menu">
+              <div className="absolute top-20 hidden group-hover:md:block hover:md:block centered-menu shadow-xl">
                 <div className="py-3"></div>
-                <div className="grid grid-cols-4 gap-10">
+                <div className="grid grid-cols-4 gap-10 border-t border-gray-300">
                   {link.sublinks.map((mysublinks, mysublinksid) => (
                     <div
                       key={mysublinksid}
-                      className={`p-5 rounded-2xl ${mysublinksid === 0 || mysublinksid === 1 || mysublinksid === 2 || mysublinksid === 3 ? "bg-customBlue bg-opacity-20 -mt-5" : ""}`}
+                      className={`p-5 rounded-2xl ${mysublinksid === 0 || mysublinksid === 1 || mysublinksid === 2 || mysublinksid === 3 ? "bg-customOrange bg-opacity-20 -mt-5 shadow-lg border-2 border-customOrange" : ""}`}
                     >
                       <h1 className="text-2xl font-semibold text-customBlue font-aquire">
                         {mysublinks.Head}
