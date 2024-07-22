@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 import { motion } from 'framer-motion';
 import { styles } from '../../styles';
-import { fadeIn } from '../../utils/motion';
+import { fadeIn, slideIn } from '../../utils/motion';
 import Lottie from 'react-lottie';
 
 import { apple_protection } from '../../assets';
@@ -24,7 +24,7 @@ const ApplePage = () => {
         <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[0px] md:pt-0 -mt-[200px] md:-mt-12">
             <div className={`${styles.paddingX} flex flex-col md:flex-row items-center gap-8`}>
                 <motion.div
-                    variants={fadeIn('up', 'spring', 0.5)}
+                    variants={fadeIn("right", "tween", 0.2, 1)}
                     initial="hidden"
                     animate="show"
                     className="flex flex-col items-center md:items-start text-center md:text-left md:mr-20"
@@ -38,7 +38,7 @@ const ApplePage = () => {
                 </motion.div>
 
                 <motion.div
-                    variants={fadeIn('up', 'spring', 0.5)}
+                    variants={fadeIn("left", "tween", 0.2, 1)}
                     initial="hidden"
                     animate="show"
                     className="relative flex-shrink-0 md:opacity-100 z-10"

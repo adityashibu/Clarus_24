@@ -7,25 +7,32 @@ import useIntersectionObserver from "../../hooks/useIntersectionOvserver";
 import { navLinks } from "../../constants";
 
 const Navbar = () => {
-  const useScrollToSection = (sectionId) => {
-    const location = useLocation();
-    const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const activeSection = useIntersectionObserver(navLinks);
 
-    useEffect(() => {
-      if (location.pathname !== '/') {
-        navigate('/');
-      } else {
-        scroller.scrollTo(sectionId, {
-          duration: 500,
-          delay: 0,
-          smooth: 'easeInOutQuart'
-        });
-      }
-    }, [location, navigate, sectionId]);
+  const handleLinkClick = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/', { replace: true, state: { scrollTo: sectionId } });
+    } else {
+      scroller.scrollTo(sectionId, {
+        duration: 500,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
+    }
   };
 
-  const [open, setOpen] = useState(false);
-  const activeSection = useIntersectionObserver(navLinks);
+  useEffect(() => {
+    if (location.state && location.state.scrollTo) {
+      scroller.scrollTo(location.state.scrollTo, {
+        duration: 500,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
+    }
+  }, [location]);
 
   const firstTwoLinks = navLinks.slice(0, 2);
   const contact = navLinks[2];
@@ -48,9 +55,10 @@ const Navbar = () => {
           {firstTwoLinks.map((link) => (
             <li key={link.id} className="cursor-pointer">
               <ScrollLink
-                to={link.url.substring(1)}  // Remove the leading "#" for react-scroll
+                to={link.url.substring(1)}
                 smooth={true}
                 duration={500}
+                onClick={() => handleLinkClick(link.url.substring(1))}
                 className={`py-7 px-3 inline-block text-white font-aquirebold navbar-link ${link.url.substring(1) === activeSection ? "active" : ""}`}
               >
                 {link.title}
@@ -61,9 +69,10 @@ const Navbar = () => {
           {contact && (
             <li key={contact.id} className="cursor-pointer">
               <ScrollLink
-                to={contact.url.substring(1)}  // Remove the leading "#" for react-scroll
+                to={contact.url.substring(1)}
                 smooth={true}
                 duration={500}
+                onClick={() => handleLinkClick(contact.url.substring(1))}
                 className={`py-7 px-3 inline-block text-white font-aquirebold navbar-link ${contact.url.substring(1) === activeSection ? "active" : ""}`}
               >
                 {contact.title}
@@ -91,11 +100,14 @@ const Navbar = () => {
           {firstTwoLinks.map((link) => (
             <li key={link.id}>
               <ScrollLink
-                to={link.url.substring(1)}  // Remove the leading "#" for react-scroll
+                to={link.url.substring(1)}
                 smooth={true}
                 duration={500}
+                onClick={() => {
+                  handleLinkClick(link.url.substring(1));
+                  setOpen(false);
+                }}
                 className={`py-7 px-3 inline-block text-white font-aquirebold`}
-                onClick={() => setOpen(false)}
               >
                 {link.title}
               </ScrollLink>
@@ -105,11 +117,14 @@ const Navbar = () => {
           {contact && (
             <li key={contact.id}>
               <ScrollLink
-                to={contact.url.substring(1)}  // Remove the leading "#" for react-scroll
+                to={contact.url.substring(1)}
                 smooth={true}
                 duration={500}
+                onClick={() => {
+                  handleLinkClick(contact.url.substring(1));
+                  setOpen(false);
+                }}
                 className={`py-7 px-3 inline-block text-white font-aquirebold`}
-                onClick={() => setOpen(false)}
               >
                 {contact.title}
               </ScrollLink>

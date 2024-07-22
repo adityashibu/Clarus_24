@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '../../components';
+import { Footer, Navbar, ScrollUp } from '../../components';
 import { Analytics } from "@vercel/analytics/react"
 
 import ApplePage from '../Subpage components/ApplePage';
@@ -21,6 +21,7 @@ const Apple = () => {
             <div>
                 <ApplePage />
             </div>
+            <ScrollUp />
             <Footer />
             <Analytics />
         </div>
