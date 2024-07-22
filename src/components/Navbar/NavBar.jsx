@@ -40,7 +40,7 @@ const Navbar = () => {
   const contact = navLinks[2];
 
   return (
-    <nav className={`bg-customBlue z-50 md:fixed md:w-full transition-opacity duration-300 ${isFooterVisible ? 'opacity-0' : 'opacity-100'}`}>
+    <nav className={`bg-customBlue z-50 md:fixed md:w-full transition-transform duration-300 ${isFooterVisible ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <a className="block xl:mr-8 font-aquirebold text-white text-[200%]" href="#home">
