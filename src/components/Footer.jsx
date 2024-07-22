@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { navLinks, digitalWorkspaceFooter } from "../constants";
 import { Link as ScrollLink } from "react-scroll";
+import Socials from "./Socials";
 
 const Footer = () => {
     return (
@@ -59,15 +60,7 @@ const Footer = () => {
                 <div className="flex-1">
                     <h3 className="text-2xl font-semibold mb-4 font-aquire">Connect with Us</h3>
                     <div className="flex space-x-4 mt-2">
-                        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:text-gray-300" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-gray-300" />
-                        </a>
-                        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-gray-300" />
-                        </a>
+                        <Socials />
                     </div>
                 </div>
             </div>
