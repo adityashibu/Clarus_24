@@ -1,11 +1,29 @@
-import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Link as ScrollLink, scroller } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
 import useIntersectionObserver from "../../hooks/useIntersectionOvserver";
 import { navLinks } from "../../constants";
 
 const Navbar = () => {
+  const useScrollToSection = (sectionId) => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      if (location.pathname !== '/') {
+        navigate('/');
+      } else {
+        scroller.scrollTo(sectionId, {
+          duration: 500,
+          delay: 0,
+          smooth: 'easeInOutQuart'
+        });
+      }
+    }, [location, navigate, sectionId]);
+  };
+
   const [open, setOpen] = useState(false);
   const activeSection = useIntersectionObserver(navLinks);
 

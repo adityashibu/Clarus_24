@@ -50,6 +50,7 @@ import customercare from "./svg/24x7customercare.svg";
 // Lottie Files
 import database from "./lotties/database.json";
 import devicemgmt from "./lotties/DeviceMgmt.json";
+import apple_protection from "./lotties/apple_protection.json";
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -100,6 +101,7 @@ export {
 
   database,
   devicemgmt,
+  apple_protection,
 
   clarus,
 };
