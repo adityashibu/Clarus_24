@@ -10,7 +10,7 @@ const Counter = ({ endCount }) => {
             }
         };
 
-        const interval = setInterval(increment, 20);
+        const interval = setInterval(increment, 0.1);
 
         return () => clearInterval(interval);
     }, [count, endCount]);
