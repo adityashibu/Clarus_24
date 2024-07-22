@@ -184,64 +184,18 @@ const digitalWorkspaceFooter = [
 
 const apple_adoption = [
     {
-        maintitle: "Apple Adoption: Your Guide to Seamless Integration into the Apple Ecosystem",
-        subheading: "Embrace the power of Apple",
-        subtext: "Our Apple Adoption services are designed to seamlessly integrate Apple devices into your business environment, ensuring smooth transitions, enhanced productivity, and a user-friendly experience. From initial deployment to ongoing support, we provide comprehensive solutions tailored to your organization's needs."
-    },
-    {
-        title: "Why Choose Apple Devices?",
         subpoints: [
             {
-                point1: "Apple's reputation for quality, innovation, and user-friendly design.",
-                point2: "Benefits of integrating Apple devices into your personal and professional life.",
-                point3: "Overview of the Apple ecosystem: iPhone, iPad, Mac, Apple Watch, Apple TV, and services like iCloud, Apple Music, and Apple Pay."
-            }
-        ],
-        subtext: "Combining an exceptional user experience with enterprise-friendly features, Apple devices provide the best platform for business. In fact, 100% of the Fortune 500 companies have adopted iOS, and 75% of employees choose Apple devices when given the option."
-    },
-    {
-        title: "Our Apple Adoption Services Include",
-        services: [
-            {
-                service: "Deployment and Configuration",
-                subtext: "We handle the deployment and configuration of all Apple devices, ensuring they are set up correctly and securely from the start. Our team manages everything from device enrolment to network integration, making the transition smooth and hassle-free."
+                title: "Innovation",
+                point: "Apple's reputation for quality, innovation, and user-friendly design.",
             },
             {
-                service: "Training and Support",
-                subtext: "Our experts provide thorough training for your team, ensuring they are comfortable and proficient with their new devices. Ongoing support is always available to address any issues or questions, offering both remote and on-site assistance.",
+                title: "Benefits",
+                point: "Benefits of integrating Apple devices into your personal and professional life.",
             },
             {
-                service: "Integration",
-                subtext: "We ensure seamless integration of Apple devices with your existing IT infrastructure, enhancing compatibility and performance. Whether you are integrating with Microsoft, Google, or other enterprise systems, we ensure everything works harmoniously.",
-            },
-            {
-                service: "Security and Management",
-                subtext: "Our services include robust security measures to protect your devices and data, as well as comprehensive management solutions to maintain optimal performance. We utilize advanced tools to manage device settings, updates, and security protocols, ensuring your devices are always protected and efficient.",
-            },
-            {
-                service: "Customized Solutions",
-                subtext: "Each business is unique, and so are our solutions. We work closely with you to understand your specific needs and tailor our services accordingly, ensuring that the Apple ecosystem works best for your business.",
-            },
-        ],
-    },
-    {
-        title: "Why Choose Our Apple Adoption Services?",
-        reasons: [
-            {
-                reason: "Expertise:",
-                subtext: "Our team consists of certified Apple professionals with extensive experience in various industries.",
-            },
-            {
-                reason: "Comprehensive Support:",
-                subtext: "From initial setup to ongoing maintenance, we provide end-to-end support for all your Apple needs.",
-            },
-            {
-                reason: "Scalability:",
-                subtext: "Whether you are a small business or a large enterprise, our solutions are scalable to fit your growth and requirements.",
-            },
-            {
-                reason: "Enhanced Productivity:",
-                subtext: "Leveraging the intuitive design and powerful capabilities of Apple devices, we help your team achieve higher productivity and efficiency.",
+                title: "Ecosystem",
+                point: "Overview of the Apple ecosystem: iPhone, iPad, Mac, Apple Watch, Apple TV, and services like iCloud, Apple Music, and Apple Pay.",
             },
         ],
     },

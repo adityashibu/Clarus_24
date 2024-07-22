@@ -1,7 +1,7 @@
-import { Footer, Navbar, ScrollUp } from '../../components';
+import { Footer, Navbar, ScrollUp, StarsCanvas } from '../../components';
 import { Analytics } from "@vercel/analytics/react"
 
-import ApplePage from '../Subpage components/ApplePage';
+import ApplePage from '../Apple/ApplePage';
 
 import { apple_protection } from '../../assets';
 
@@ -20,6 +20,7 @@ const Apple = () => {
             <Navbar />
             <div>
                 <ApplePage />
+                <StarsCanvas />
             </div>
             <ScrollUp />
             <Footer />
