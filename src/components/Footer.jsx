@@ -6,6 +6,8 @@ import { Link as ScrollLink } from "react-scroll";
 import Socials from "./Socials";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="bg-customBlue text-white py-10">
             <div className="container mx-auto flex flex-col md:flex-row justify-between gap-8 px-4">
@@ -63,6 +65,13 @@ const Footer = () => {
                         <Socials />
                     </div>
                 </div>
+            </div>
+
+            {/* Copyright Line */}
+            <div className="mt-8 text-center md:mt-10">
+                <p className="text-sm md:text-lg">
+                    &copy; {currentYear} Clarus24. All rights reserved.
+                </p>
             </div>
         </footer>
     );
