@@ -201,6 +201,56 @@ const apple_adoption = [
     },
 ];
 
+const apple_adoption_services = [
+    {
+        subpoints: [
+            {
+                title: "Deployment and Configuration",
+                description: "We handle the deployment and configuration of all Apple devices, ensuring they are set up correctly and securely from the start. Our team manages everything from device enrolment to network integration, making the transition smooth and hassle-free.",
+            },
+            {
+                title: "Training and Support",
+                description: "Our experts provide thorough training for your team, ensuring they are comfortable and proficient with their new devices. Ongoing support is always available to address any issues or questions, offering both remote and on-site assistance.",
+            },
+            {
+                title: "Integration",
+                description: "We ensure seamless integration of Apple devices with your existing IT infrastructure, enhancing compatibility and performance. Whether you are integrating with Microsoft, Google, or other enterprise systems, we ensure everything works harmoniously.",
+            },
+            {
+                title: "Security and Management",
+                description: "Our services include robust security measures to protect your devices and data, as well as comprehensive management solutions to maintain optimal performance. We utilize advanced tools to manage device settings, updates, and security protocols, ensuring your devices are always protected and efficient.",
+            },
+            {
+                title: "Customized Solutions",
+                description: "Each business is unique, and so are our solutions. We work closely with you to understand your specific needs and tailor our services accordingly, ensuring that the Apple ecosystem works best for your business.",
+            },
+        ]
+    }
+];
+
+const apple_adoption_reasons = [
+    {
+        subpoints: [
+            {
+                title: "Expertise",
+                description: "Our team consists of certified Apple professionals with extensive experience in various industries.",
+            },
+            {
+                title: "Comprehensive Support",
+                description: "From initial setup to ongoing maintenance, we provide end-to-end support for all your Apple needs.",
+            },
+            {
+                title: "Scalability",
+                description: "Whether you are a small business or a large enterprise, our solutions are scalable to fit your growth and requirements.",
+            },
+            {
+                title: "Enhanced Productivity",
+                description: "Leveraging the intuitive design and powerful capabilities of Apple devices, we help your team achieve higher productivity and efficiency.",
+            },
+        ],
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -300,5 +350,5 @@ const faqs = [
 
 export {
     services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter,
-    apple_adoption,
+    apple_adoption, apple_adoption_services, apple_adoption_reasons,
 };

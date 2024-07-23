@@ -1,9 +1,13 @@
-import applePage from "./ApplePage";
+import ApplePage from "./ApplePage";
 import AppleHero from "./AppleHero";
 import AppleAbout from "./AppleAbout";
+import AppleServices from "./AppleServices";
+import AppleReasons from "./AppleReasons";
 
 export {
-    applePage,
+    ApplePage,
     AppleHero,
     AppleAbout,
+    AppleServices,
+    AppleReasons,
 };

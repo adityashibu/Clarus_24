@@ -1,11 +1,8 @@
 import AppleHero from './AppleHero';
-
-import { motion } from 'framer-motion';
-import { textVariant } from '../../utils/motion';
-import { styles } from '../../styles';
-
 import { SectionWrapper } from '../../hoc';
-import AppleAbout from './AppleAbout';
+import AppleAbout from "../Apple/AppleAbout"
+import AppleServices from './AppleServices';
+import AppleReasons from './AppleReasons';
 
 const ApplePage = () => {
     return (
@@ -13,6 +10,8 @@ const ApplePage = () => {
             <AppleHero />
             <div>
                 <AppleAbout />
+                <AppleServices />
+                <AppleReasons />
             </div>
         </section>
     );
