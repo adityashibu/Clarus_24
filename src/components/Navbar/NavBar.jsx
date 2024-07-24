@@ -3,7 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Link as ScrollLink, scroller } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
-import useIntersectionObserver from "../../hooks/useIntersectionOvserver";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import useFooterObserver from "../../hooks/useFooterObserver"; // Import the new hook
 import { navLinks } from "../../constants";
 
 const Navbar = () => {
@@ -11,6 +12,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const activeSection = useIntersectionObserver(navLinks);
+  const isFooterVisible = useFooterObserver(); // Use the new hook
 
   const handleLinkClick = (sectionId) => {
     if (location.pathname !== '/') {
@@ -38,7 +40,7 @@ const Navbar = () => {
   const contact = navLinks[2];
 
   return (
-    <nav className="bg-customBlue z-50 md:fixed md:w-full">
+    <nav className={`bg-customBlue z-50 md:fixed md:w-full transition-opacity duration-300 ${isFooterVisible ? 'opacity-100 md:opacity-0' : 'opacity-100'}`}>
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <a className="block xl:mr-8 font-aquirebold text-white text-[200%]" href="#home">
