@@ -84,8 +84,8 @@ const Navbar = () => {
           )}
         </ul>
         <div className="md:block hidden">
-          <Socials />
-          {/* <HelpdeskButton /> */}
+          {/* <Socials /> */}
+          <HelpdeskButton />
         </div>
 
         {/* Mobile nav */}
@@ -135,7 +135,8 @@ const Navbar = () => {
             </li>
           )}
           <div className="py-5 px-3">
-            <Socials />
+            {/* <Socials /> */}
+            <HelpdeskButton />
           </div>
         </ul>
       </div>
