@@ -11,7 +11,6 @@ export const links = [
           { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
           { name: "Managed Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
           { name: "Digital Forensics and Incident Response", link: "/digital-forensics" },
-          { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
       {
@@ -35,7 +34,6 @@ export const links = [
           { name: "Cyber Security Controls Assessment", link: "/cybersecurity-controls" },
           { name: "Web Application Security Testing", link: "/webapplication-security" },
           { name: "Phishing Attack Simulation", link: "/phishing-simulation" },
-          { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
       {
@@ -47,7 +45,6 @@ export const links = [
           { name: "Managed Data Security", link: "/data-security" },
           { name: "Threat and Risk Intelligence", link: "/tri" },
           { name: "Identity and Access Management", link: "/iam" },
-          { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
     ],
