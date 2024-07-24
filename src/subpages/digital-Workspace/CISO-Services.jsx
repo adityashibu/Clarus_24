@@ -1,22 +1,21 @@
+import React from 'react'
 import { Footer, Navbar, ScrollUp, StarsCanvas } from '../../components';
 import { Analytics } from "@vercel/analytics/react"
+import CISOPage from '../CISO/CISOPage';
 
-import ApplePage from '../Apple/ApplePage';
-
-const Apple = () => {
+const CISO = () => {
     return (
         <div className="relative z-0 bg-white">
             <Navbar />
             <div>
-                <ApplePage />
+                <CISOPage />
                 <StarsCanvas />
             </div>
             <ScrollUp />
             <Footer />
             <Analytics />
         </div>
-    );
-};
+    )
+}
 
-export default Apple;
-
+export default CISO

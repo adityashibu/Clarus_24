@@ -51,6 +51,7 @@ import customercare from "./svg/24x7customercare.svg";
 import database from "./lotties/database.json";
 import devicemgmt from "./lotties/DeviceMgmt.json";
 import apple_protection from "./lotties/apple_protection.json";
+import CISO from "./lotties/CISO.json"
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -102,6 +103,7 @@ export {
   database,
   devicemgmt,
   apple_protection,
+  CISO,
 
   clarus,
 };

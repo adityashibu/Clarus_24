@@ -20,6 +20,9 @@ import ScrollUp from './ScrollUp';
 import Navbar from './Navbar/NavBar';
 import Socials from './Socials';
 
+// Scroll Handler 
+import ScrollHandler from './ScrollHandler';
+
 export {
   Hero,
   Navbar,
@@ -41,4 +44,6 @@ export {
   ScrollUp,
 
   Socials,
+
+  ScrollHandler,
 }

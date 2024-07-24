@@ -111,74 +111,93 @@ const digitalWorkspace = [
         title: "Apple Adoption",
         description: "Seamlessly transition to Apple devices with our expert guidance. Embrace the Apple ecosystem—your smooth journey starts here.",
         icon: applelogo,
+        link: "/apple_adoption",
     },
     {
         title: "CISO Services",
-        description: "Safeguard your organization from cyber threats with our expert CISO guidance. Strengthen your security posture and ensure regulatory compliance effortlessly."
+        description: "Safeguard your organization from cyber threats with our expert CISO guidance. Strengthen your security posture and ensure regulatory compliance effortlessly.",
+        link: "/ciso-services",
     },
     {
         title: "End Compute Management",
-        description: "Maximize the potential of your Apple devices and enhance your business efficiency. Device management has never been this effortless or effective"
+        description: "Maximize the potential of your Apple devices and enhance your business efficiency. Device management has never been this effortless or effective",
+        link: "/end-compute",
     },
     {
         title: "Technical Services",
-        description: "Optimize your IT infrastructure with our advanced technical services. Enhance performance and reliability across your digital environment."
+        description: "Optimize your IT infrastructure with our advanced technical services. Enhance performance and reliability across your digital environment.",
+        link: "/technical",
     },
     {
         title: "Device Integration",
-        description: "Ensure a seamless and reliable transition of Apple devices into your existing IT environment. We make integration feel like a perfect fit every time."
+        description: "Ensure a seamless and reliable transition of Apple devices into your existing IT environment. We make integration feel like a perfect fit every time.",
+        link: "/device-integration",
     },
     {
         title: "Consulting Services",
-        description: "Unlock your business potential with our expert consulting services. Gain strategic insights and tailored solutions to drive growth and innovation."
+        description: "Unlock your business potential with our expert consulting services. Gain strategic insights and tailored solutions to drive growth and innovation.",
+        link: "/consulting",
     },
     {
         title: "Governance & Compliance",
-        description: "Stay ahead of regulations with our governance and compliance services. Ensure your organization meets all legal requirements and industry standards."
+        description: "Stay ahead of regulations with our governance and compliance services. Ensure your organization meets all legal requirements and industry standards.",
+        link: "/governance",
     },
     {
         title: "Personified Automated Workflow",
-        description: "Customize and automate your workflows for peak performance. Efficiency meets elegance in every task you undertake."
+        description: "Customize and automate your workflows for peak performance. Efficiency meets elegance in every task you undertake.",
+        link: "/automated-workflow",
     },
     {
         title: "Manage",
-        description: "Maintain and optimize your security posture with our proactive management services. We continuously monitor, update, and improve your defenses to stay ahead of potential risks."
+        description: "Maintain and optimize your security posture with our proactive management services. We continuously monitor, update, and improve your defenses to stay ahead of potential risks.",
+        link: "/manage",
     },
     {
         title: "Orchestrate",
-        description: "Seamlessly integrate and coordinate security measures across your entire infrastructure. We ensure all components work in harmony to provide optimal protection and efficiency."
+        description: "Seamlessly integrate and coordinate security measures across your entire infrastructure. We ensure all components work in harmony to provide optimal protection and efficiency.",
+        link: "/orchestrate",
     },
     {
         title: "Design",
-        description: "Craft comprehensive security solutions tailored to your unique needs. Our expert team designs robust frameworks that protect against evolving threats."
+        description: "Craft comprehensive security solutions tailored to your unique needs. Our expert team designs robust frameworks that protect against evolving threats.",
+        link: "/design",
     },
     {
         title: "Helpdesk",
-        description: "Enjoy 24/7 multilingual tech support for your Mac devices. Rest easy knowing our experts are always ready to assist, no matter the hour or language."
+        description: "Enjoy 24/7 multilingual tech support for your Mac devices. Rest easy knowing our experts are always ready to assist, no matter the hour or language.",
+        link: "/helpdesk",
     },
 ];
 
 const digitalWorkspaceFooter = [
     {
         title: "Apple Adoption",
+        link: "/apple-adoption",
     },
     {
         title: "End Compute Management",
+        link: "/end-compute",
     },
     {
         title: "Device Integration",
+        link: "/device-integration",
     },
     {
         title: "Consulting Services",
+        link: "/consulting",
     },
     {
         title: "Personified Automated Workflow",
+        link: "/automated-workflow",
     },
     {
         title: "Design",
+        link: "/design",
     },
     {
         title: "Helpdesk",
+        link: "/helpdesk",
     },
 ];
 

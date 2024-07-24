@@ -1,12 +1,38 @@
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { navLinks, digitalWorkspaceFooter } from "../constants";
-import { Link as ScrollLink } from "react-scroll";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { Link as ScrollLink, scroller } from "react-scroll";
 import Socials from "./Socials";
+import { navLinks, digitalWorkspaceFooter } from "../constants";
+
+const handleLinkClick = (navigate, sectionId) => {
+    if (location.pathname !== '/') {
+        navigate('/', { replace: true, state: { scrollTo: sectionId } });
+    } else {
+        // Delay scrolling to ensure the page is scrolled to top before scrolling to the section
+        setTimeout(() => {
+            scroller.scrollTo(sectionId, {
+                duration: 500,
+                delay: 0,
+                smooth: 'easeInOutQuart'
+            });
+        }, 100); // Short delay to ensure navigation to the top
+    }
+};
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state && location.state.scrollTo) {
+            scroller.scrollTo(location.state.scrollTo, {
+                duration: 500,
+                delay: 0,
+                smooth: 'easeInOutQuart'
+            });
+        }
+    }, [location]);
 
     return (
         <footer className="bg-customBlue text-white py-10">
@@ -34,9 +60,13 @@ const Footer = () => {
                         {navLinks.map((link) => (
                             <li key={link.id} className="mb-2">
                                 <ScrollLink
-                                    to={link.footerurl}
+                                    to={link.id}
                                     smooth={true}
                                     duration={500}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleLinkClick(navigate, link.id);
+                                    }}
                                     className="underline-animation hover:text-white cursor-pointer"
                                 >
                                     {`> ${link.title}`}
@@ -52,7 +82,9 @@ const Footer = () => {
                     <ul>
                         {digitalWorkspaceFooter.map((item) => (
                             <li key={item.id} className="mb-2">
-                                {`> ${item.title}`}
+                                <Link to={item.link} className="underline-animation" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                    <span>{`> ${item.title}`}</span>
+                                </Link>
                             </li>
                         ))}
                     </ul>
