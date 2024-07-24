@@ -31,7 +31,7 @@ const NavLinks = () => {
             {link.submenu && (
               <div className="absolute top-20 hidden group-hover:md:block hover:md:block centered-menu shadow-xl">
                 <div className="py-3"></div>
-                <div className="grid grid-cols-4 gap-10 border-t border-gray-300">
+                <div className="grid grid-cols-4 gap-10">
                   {link.sublinks.map((mysublinks, mysublinksid) => (
                     <div
                       key={mysublinksid}
