@@ -46,6 +46,7 @@ export const links = [
           { name: "Darktrace/Email as a Service", link: "/darktrace" },
           { name: "Managed Data Security", link: "/data-security" },
           { name: "Threat and Risk Intelligence", link: "/tri" },
+          { name: "Identity and Access Management", link: "/iam" }
           { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
