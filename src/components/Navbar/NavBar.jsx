@@ -4,7 +4,7 @@ import { Link as ScrollLink, scroller } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import useFooterObserver from "../../hooks/useFooterObserver"; // Import the new hook
+import useFooterObserver from "../../hooks/useFooterObserver";
 import { navLinks } from "../../constants";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const activeSection = useIntersectionObserver(navLinks);
-  const isFooterVisible = useFooterObserver(); // Use the new hook
+  const isFooterVisible = useFooterObserver();
 
   const handleLinkClick = (sectionId) => {
     if (location.pathname !== '/') {

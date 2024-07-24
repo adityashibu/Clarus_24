@@ -270,6 +270,125 @@ const apple_adoption_reasons = [
     },
 ];
 
+const ciso_services = [
+    {
+        subpoints: [
+            {
+                title: "CISO Strategy Development",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "CISO as a Service (CaaS)",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "Compliance and Risk Management",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "Security Awareness and Training",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "Incident Response and Management",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "Continuous Security Monitoring",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+            {
+                title: "Data Protection and Privacy",
+                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                components: [
+                    {
+                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                    },
+                    {
+                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                    },
+                    {
+                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                    }
+                ],
+                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+            },
+        ],
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -369,5 +488,5 @@ const faqs = [
 
 export {
     services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter,
-    apple_adoption, apple_adoption_services, apple_adoption_reasons,
+    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services,
 };

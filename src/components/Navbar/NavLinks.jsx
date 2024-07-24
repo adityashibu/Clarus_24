@@ -43,7 +43,7 @@ const NavLinks = () => {
                       <div className="mt-5">
                         {mysublinks.sublink.map((slink, slinkid) => (
                           <li className="text-sm text-gray-600 my-2.5" key={slinkid}>
-                            <Link to={slink.link} className="hover:text-primary">
+                            <Link to={slink.link} className="hover:text-primary" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                               {slink.name}
                             </Link>
                           </li>
@@ -82,6 +82,9 @@ const NavLinks = () => {
                         </Link>
                       </li>
                     ))}
+                  </div>
+                  <div>
+                    <h1 className="text-customBlue">Hello world</h1>
                   </div>
                 </div>
               </div>
