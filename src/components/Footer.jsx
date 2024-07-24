@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright Line */}
-            <div className="sm:text-left text-center md:mt-10">
+            <div className="text-left md:text-center md:mt-10 mt-5">
                 <p className="text-sm md:text-lg">
                     &copy; {currentYear} Clarus24. All rights reserved.
                 </p>
