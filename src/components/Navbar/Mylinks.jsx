@@ -10,7 +10,7 @@ export const links = [
           { name: "Extended Detection and Response", link: "/xdr" },
           { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
           { name: "Managed Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
-          { name: "Digital Forensics & Incident Response", link: "/digital-forensics" },
+          { name: "Digital Forensics and Incident Response", link: "/digital-forensics" },
           { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
