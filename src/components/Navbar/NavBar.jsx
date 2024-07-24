@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Link as ScrollLink, scroller } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
+import HelpdeskButton from "../Helpdesk";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import useFooterObserver from "../../hooks/useFooterObserver";
 import { navLinks } from "../../constants";
@@ -84,6 +85,7 @@ const Navbar = () => {
         </ul>
         <div className="md:block hidden">
           <Socials />
+          {/* <HelpdeskButton /> */}
         </div>
 
         {/* Mobile nav */}
