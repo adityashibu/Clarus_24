@@ -1,4 +1,78 @@
-/* Custom CSS for slick carousel */
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.backface-hidden {
+    backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+.flip-card-container {
+    perspective: 1000px;
+    width: 360px;
+    height: 250px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 1rem;
+    /* Adjust padding to match */
+    box-sizing: border-box;
+    /* Ensure padding does not exceed container width */
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+    border: 2px solid #004D80;
+    /* Custom blue color */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.flip-card-back {
+    background-color: #ffffff;
+    border: 2px solid #004D80;
+    /* Custom blue color */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure that the flip-card-back is hidden until flipped */
+.flip-card-front {
+    z-index: 2;
+    /* Ensure front is on top */
+}
+
+.flip-card-back {
+    z-index: 1;
+    /* Ensure back is below front */
+}
 
 /* Style for the dots */
 .slick-dots {
@@ -9,7 +83,6 @@
     position: relative;
 }
 
-/* Base style for the dot */
 .slick-dots li button {
     position: relative;
     width: 10px;
@@ -19,7 +92,6 @@
     cursor: pointer;
 }
 
-/* Pseudo-element to create the sprinkle shape */
 .slick-dots li button:before {
     content: '';
     position: absolute;
@@ -29,11 +101,9 @@
     width: 10px;
     height: 10px;
     background-color: #004D80;
-    /* Custom blue color */
     border-radius: 50%;
 }
 
-/* Adjust position of dots relative to active dot */
 .slick-dots li {
     position: relative;
     top: auto;

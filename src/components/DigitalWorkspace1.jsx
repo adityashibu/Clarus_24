@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 
 import { styles } from '../styles';
@@ -13,39 +13,38 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ title, description, index }) => {
-    const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
+const ServiceCard = ({ title, description, index, backContent }) => {
+    const [flipped, setFlipped] = useState(false);
+
+    const handleFlip = () => {
+        setFlipped(!flipped);
+    };
 
     return (
         <motion.div
             variants={fadeIn("up", "spring", index * 0.2, 0.75)}
-            className=""
+            className="flex justify-center"
+            onClick={handleFlip}
         >
-            {isSmallScreen ? (
-                <div className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue shadow-card">
-                    <div className="mt-5">
-                        <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                        <p className="mt-2 text-black text-[14px]">{description}</p>
+            <div className="flip-card-container">
+                <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
+                    <div className="flip-card-front">
+                        <div>
+                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
+                            <p className="mt-2 text-black text-[14px]">{description}</p>
+                        </div>
+                    </div>
+                    <div className="flip-card-back">
+                        <div>
+                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">Back</h3>
+                            <p className="mt-2 text-black text-[14px]">{backContent}</p>
+                        </div>
                     </div>
                 </div>
-            ) : (
-                <Tilt
-                    options={{
-                        max: 45,
-                        scale: 1,
-                        speed: 450
-                    }}
-                    className="bg-[#ffffff] p-5 rounded-2xl h-[250px] sm:w-[360px] w-full border-2 border-customBlue shadow-card"
-                >
-                    <div className="mt-5">
-                        <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                        <p className="mt-2 text-black text-[14px]">{description}</p>
-                    </div>
-                </Tilt>
-            )}
+            </div>
         </motion.div>
     );
-}
+};
 
 const DigitalWorkspace1 = () => {
     return (

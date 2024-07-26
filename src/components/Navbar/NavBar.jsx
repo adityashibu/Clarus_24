@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { Link as ScrollLink, scroller } from "react-scroll";
 import NavLinks from "./NavLinks";
 import Socials from "../Socials";
@@ -44,9 +44,11 @@ const Navbar = () => {
     <nav className={`bg-customBlue z-50 md:fixed md:w-full transition-opacity duration-300 ${isFooterVisible ? 'opacity-100 md:opacity-0' : 'opacity-100'}`}>
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
-          <a className="block xl:mr-8 font-aquirebold text-white text-[200%]" href="#home">
-            Clarus<span className="font-altedinbold">24</span>
-          </a>
+          <Link to={"/"} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <a className="block xl:mr-8 font-aquirebold text-white text-[200%]" href="#home">
+              Clarus<span className="font-altedinbold">24</span>
+            </a>
+          </Link>
           <div
             className="text-3xl md:hidden text-white z-60 pt-2"
             onClick={() => setOpen(!open)}
@@ -84,7 +86,7 @@ const Navbar = () => {
           )}
         </ul>
         <div className="md:block hidden">
-          <Socials />
+          {/* <Socials /> */}
           {/* <HelpdeskButton /> */}
         </div>
 
@@ -135,7 +137,7 @@ const Navbar = () => {
             </li>
           )}
           <div className="py-5 px-3">
-            <Socials />
+            {/* <Socials /> */}
             {/* <HelpdeskButton /> */}
           </div>
         </ul>
