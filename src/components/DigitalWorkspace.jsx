@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
+
+import { Link } from 'react-router-dom';
+
 import { styles } from '../styles';
 import { motion } from 'framer-motion';
-import { digitalWorkspace } from '../constants';
+import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ title, description, index, backContent }) => {
-    const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
+const ServiceCard = ({ title, description, index, backlinks }) => {
     const [flipped, setFlipped] = useState(false);
 
     const handleFlip = () => {
@@ -25,16 +27,24 @@ const ServiceCard = ({ title, description, index, backContent }) => {
         >
             <div className="flip-card-container cursor-pointer">
                 <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
-                    <div className="flip-card-front">
-                        <div className="mt-5">
+                    <div className="flip-card-front flex flex-col items-left">
+                        <div>
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
                             <p className="mt-2 text-black text-[14px]">{description}</p>
                         </div>
                     </div>
-                    <div className="flip-card-back">
-                        <div className="mt-5">
-                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">Back</h3>
-                            <p className="mt-2 text-black text-[14px]">{backContent}</p>
+                    <div className="flip-card-back flex flex-col p-5">
+                        <div className="flex flex-col">
+                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">Links</h3>
+                            <ul className="mt-2">
+                                {backlinks.map((link, index) => (
+                                    <li key={index} className="mb-2">
+                                        <Link to={link.link} className="text-blue-600 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -47,21 +57,28 @@ const DigitalWorkspace = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Digital Workspace</h2>
+                <h2 className={styles.sectionHeadText}>Our Services</h2>
                 <motion.p
                     variants={fadeIn("", "", 0.1, 1)}
                     className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
                 >
-                    We partner with business to eliminate innovation barriers and enable modern IT management. Our continuous lifecycle approach meets businesses at their current stage of digital transformation, providing a framework for agile co-innovation:
+                    Explore our array of services that are designed to help you achieve your business goals. Our services are tailored to meet your specific needs and requirements, ensuring that you get the best possible results.
                 </motion.p>
             </motion.div>
-            <div className="mt-20 flex flex-wrap gap-7 justify-center">
-                {digitalWorkspace.slice(0, 3).map((about, index) => (
-                    <ServiceCard key={about.title} index={index} {...about} backContent="This is the back of the card." />
+            <div className="mt-20 grid grid-cols-2 gap-10 justify-start">
+                {services.slice(0, 4).map((service, index) => (
+                    <ServiceCard
+                        key={service.title}
+                        index={index}
+                        title={service.title}
+                        description={service.description}
+                        backlinks={service.backlinks}
+                        icon={service.icon}
+                    />
                 ))}
             </div>
         </>
     );
 }
 
-export default SectionWrapper(DigitalWorkspace, "digital-workspace");
+export default SectionWrapper(DigitalWorkspace, "our-services");

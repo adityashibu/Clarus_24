@@ -66,24 +66,56 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Envision",
+        title: "Managed Defense",
         icon: web,
-        description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes."
+        description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes.",
+        backlinks: [
+            { name: "Managed Detection and Response", link: "/mdr" },
+            { name: "Extended Detection and Response", link: "/xdr" },
+            { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
+            { name: "Managed Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
+            { name: "Digital Forensics and Incident Response", link: "/digital-forensics" },
+        ]
     },
     {
-        title: "Design",
+        title: "Managed Endcompute",
         icon: mobile,
-        description: "Co-create solutions tailored to your industry's unique hybrid technology environment."
+        description: "Co-create solutions tailored to your industry's unique hybrid technology environment.",
+        backlinks: [
+            { name: "Mobile Device Manager", link: "/mobile-manager" },
+            { name: "Compliance assessment and Remediation", link: "/compliance-assessment" },
+            { name: "Cross Platform Integration", link: "/cross-platform" },
+            { name: "Apple Adoption", link: "/apple-adoption" },
+            { name: "Configuration Health Check", link: "/configuration-check" },
+            { name: "Hardware Health Check", link: "/hardware-check" },
+            { name: "Multilingual Helpdesk", link: "/helpdesk" },
+        ]
     },
     {
-        title: "Adapt",
+        title: "Managed Risk",
         icon: backend,
-        description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation."
+        description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation.",
+        backlinks: [
+            { name: "Penetration Testing", link: "/pentesting" },
+            { name: "Vulnerability Management as a Service", link: "/vmaas" },
+            { name: "CISO as a Service", link: "/ciso-services" },
+            { name: "Cyber Security Controls Assessment", link: "/cybersecurity-controls" },
+            { name: "Web Application Security Testing", link: "/webapplication-security" },
+            { name: "Phishing Attack Simulation", link: "/phishing-simulation" },
+        ]
     },
     {
-        title: "Evolve",
+        title: "Managed Security",
         icon: creator,
-        description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization."
+        description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization.",
+        backlinks: [
+            { name: "Managed Endpoint Protection", link: "/epp" },
+            { name: "Managed Endpoint Security", link: "/endpoint-security" },
+            { name: "Darktrace/Email as a Service", link: "/darktrace" },
+            { name: "Managed Data Security", link: "/data-security" },
+            { name: "Threat and Risk Intelligence", link: "/tri" },
+            { name: "Identity and Access Management", link: "/iam" },
+        ]
     },
 ];
 
@@ -425,7 +457,7 @@ const partners = [
     { icon: microsoft },
     { icon: sophos },
     { icon: splunk },
-]
+];
 
 const testimonials = [
     {
