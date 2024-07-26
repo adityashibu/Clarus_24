@@ -54,6 +54,13 @@ const ServiceCard = ({ title, description, index, backlinks }) => {
 };
 
 const DigitalWorkspace = () => {
+    const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+
+    const containerStyle = {
+        width: isLargeScreen ? '80%' : '100%',
+        columnGap: isLargeScreen ? '-5px' : '0px',
+    };
+
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -65,7 +72,7 @@ const DigitalWorkspace = () => {
                     Explore our array of services that are designed to help you achieve your business goals. Our services are tailored to meet your specific needs and requirements, ensuring that you get the best possible results.
                 </motion.p>
             </motion.div>
-            <div className="mt-20 grid grid-cols-2 gap-y-10 justify-center" style={{ columnGap: '-5px', width: '80%' }}>
+            <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 gap-10 justify-center" style={containerStyle}>
                 {services.slice(0, 4).map((service, index) => (
                     <ServiceCard
                         key={service.title}
