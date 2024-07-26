@@ -64,6 +64,29 @@ export const navLinks = [
     },
 ];
 
+export const servicesFooter = [
+    {
+        id: "managed-defense",
+        title: "Managed Defense",
+        url: "our-services",
+    },
+    {
+        id: "managed-endcompute",
+        title: "Managed Endcompute",
+        url: "our-services",
+    },
+    {
+        id: "managed-risk",
+        title: "Managed Risk",
+        url: "our-services",
+    },
+    {
+        id: "managed-security",
+        title: "Managed Security",
+        url: "our-services",
+    },
+];
+
 const services = [
     {
         title: "Managed Defense",

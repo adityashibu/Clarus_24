@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { Link as ScrollLink, scroller } from "react-scroll";
 import Socials from "./Socials";
-import { navLinks, digitalWorkspaceFooter } from "../constants";
+import { navLinks, servicesFooter } from "../constants";
 
 const handleLinkClick = (navigate, sectionId) => {
     if (location.pathname !== '/') {
@@ -78,13 +78,22 @@ const Footer = () => {
 
                 {/* Third Column */}
                 <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 font-aquire">Digital Workspace</h3>
+                    <h3 className="text-2xl font-semibold mb-4 font-aquire">Services</h3>
                     <ul>
-                        {digitalWorkspaceFooter.map((item) => (
-                            <li key={item.id} className="mb-2">
-                                <Link to={item.link} className="underline-animation" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                                    <span>{`> ${item.title}`}</span>
-                                </Link>
+                        {servicesFooter.map((link) => (
+                            <li key={link.id} className="mb-2">
+                                <ScrollLink
+                                    to="our-services"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleLinkClick(navigate, link.id);
+                                    }}
+                                    className="underline-animation hover:text-white cursor-pointer"
+                                >
+                                    {`> ${link.title}`}
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>

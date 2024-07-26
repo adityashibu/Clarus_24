@@ -62,7 +62,7 @@ const DigitalWorkspace = () => {
     };
 
     return (
-        <>
+        <section id="our-services">
             <motion.div variants={textVariant()}>
                 <h2 className={styles.sectionHeadText}>Our Services</h2>
                 <motion.p
@@ -84,7 +84,7 @@ const DigitalWorkspace = () => {
                     />
                 ))}
             </div>
-        </>
+        </section>
     );
 }
 
