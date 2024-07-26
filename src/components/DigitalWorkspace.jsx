@@ -39,7 +39,7 @@ const ServiceCard = ({ title, description, index, backlinks }) => {
                             <ul className="mt-2">
                                 {backlinks.map((link, index) => (
                                     <li key={index} className="mb-2">
-                                        <Link to={link.link} className="text-blue-600 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                        <Link to={link.link} className="text-black hover:underline hover:text-customBlue" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                             {link.name}
                                         </Link>
                                     </li>
