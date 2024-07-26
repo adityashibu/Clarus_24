@@ -88,7 +88,7 @@ const Footer = () => {
                                     duration={500}
                                     onClick={(e) => {
                                         e.preventDefault();
-                                        handleLinkClick(navigate, link.id);
+                                        handleLinkClick(navigate, "our-services");
                                     }}
                                     className="underline-animation hover:text-white cursor-pointer"
                                 >

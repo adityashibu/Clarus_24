@@ -5,6 +5,8 @@ import { SectionWrapper } from '../hoc';
 import Lottie from 'react-lottie';
 import { devicemgmt } from '../assets';
 
+import { Link as ScrollLink } from 'react-scroll';
+
 const Hero = () => {
   const defaultOptions = {
     loop: true,
@@ -49,8 +51,8 @@ const Hero = () => {
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about-us">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2">
+        <ScrollLink to="about-us" smooth={true} duration={500} offset={-50}>
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2 cursor-pointer">
             <motion.div
               animate={{
                 y: [0, 24, 0]
@@ -63,7 +65,7 @@ const Hero = () => {
               className="w-4 h-4 rounded-full bg-customBlue"
             />
           </div>
-        </a>
+        </ScrollLink>
       </div>
     </section>
   );
