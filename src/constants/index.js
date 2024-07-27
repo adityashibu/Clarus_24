@@ -506,6 +506,33 @@ const helpdesk_services = [
     },
 ];
 
+const helpdesk_reasons = [
+    {
+        subpoints: [
+            {
+                title: "24/7 Availability",
+                description: "Our helpdesk is available around the clock to provide support whenever you need it.",
+            },
+            {
+                title: "Expert Team",
+                description: "Our team consists of highly skilled professionals with extensive experience in technical support.",
+            },
+            {
+                title: "Fast Resolution",
+                description: "We prioritize quick and effective issue resolution to minimize downtime and disruption.",
+            },
+            {
+                title: "Issue Resolution",
+                description: "Quickly resolve technical issues to minimize downtime. Our helpdesk team is trained to handle a wide range of technical issues, ensuring prompt and effective resolution.",
+            },
+            {
+                title: "User Satisfaction",
+                description: "Our focus on user satisfaction ensures that your team receives the support they need to work efficiently.",
+            },
+        ],
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -605,5 +632,5 @@ const faqs = [
 
 export {
     services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter,
-    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services, ciso_reasons, helpdesk_services,
+    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services, ciso_reasons, helpdesk_services, helpdesk_reasons,
 };
