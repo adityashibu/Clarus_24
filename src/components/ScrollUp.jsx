@@ -10,10 +10,6 @@ const ScrollUp = () => {
         const aboutSection = document.querySelector('#about-us');
         const aboutSectionPosition = aboutSection ? aboutSection.offsetTop : 0;
 
-        console.log('Window scrollY:', window.scrollY);
-        console.log('About section position:', aboutSectionPosition);
-        console.log('Footer position:', footerPosition);
-
         if (window.scrollY > aboutSectionPosition) {
             setIsVisible(true);
         } else {

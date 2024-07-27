@@ -52,6 +52,7 @@ import database from "./lotties/database.json";
 import devicemgmt from "./lotties/DeviceMgmt.json";
 import apple_protection from "./lotties/apple_protection.json";
 import CISO from "./lotties/CISO.json"
+import helpdesk from "./lotties/Helpdesk.json";
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -104,6 +105,7 @@ export {
   devicemgmt,
   apple_protection,
   CISO,
+  helpdesk,
 
   clarus,
 };

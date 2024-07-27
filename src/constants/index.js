@@ -471,6 +471,41 @@ const ciso_reasons = [
     },
 ];
 
+const helpdesk_services = [
+    {
+        subpoints: [
+            {
+                title: "24/7 Support",
+                description: "Round-the-clock support to address any technical issues promptly. Our helpdesk team is available via phone, email, and chat to provide quick and efficient assistance.",
+            },
+            {
+                title: "Multi-Channel Support",
+                description: "Offer support through various channels, including phone, email, and chat. We provide flexible support options to meet the diverse needs of your users.",
+            },
+            {
+                title: "Experienced Professionals",
+                description: "Work with seasoned cybersecurity experts with a proven track record.",
+            },
+            {
+                title: "Issue Resolution",
+                description: "Quickly resolve technical issues to minimize downtime. Our helpdesk team is trained to handle a wide range of technical issues, ensuring prompt and effective resolution.",
+            },
+            {
+                title: "User Training",
+                description: "Provide training to help users understand and utilize their technology effectively. We offer training sessions, user guides, and tutorials to enhance user proficiency and confidence.",
+            },
+            {
+                title: "Remote Assistance",
+                description: "Provide remote support to quickly address and resolve issues. Our remote assistance services allow us to diagnose and fix problems without the need for on-site visits.",
+            },
+            {
+                title: "Proactive Support",
+                description: "Identify and address potential issues before they impact your users. We use advanced monitoring tools to detect and resolve issues proactively, ensuring a smooth and efficient user experience.",
+            },
+        ],
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -570,5 +605,5 @@ const faqs = [
 
 export {
     services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter,
-    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services, ciso_reasons,
+    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services, ciso_reasons, helpdesk_services,
 };
