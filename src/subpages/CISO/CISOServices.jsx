@@ -21,13 +21,13 @@ const ServiceCard = ({ title, description, components, benefits, index }) => {
         >
             {isSmallScreen ? (
                 <div className="md:mt-0 -mt-5">
-                    <div className="bg-[#ffffff] p-5 rounded-2xl h-[550px] sm:w-[380px] w-full border-2 border-customBlue shadow-card flex items-center justify-center">
+                    <div className="bg-[#ffffff] p-5 rounded-2xl h-[600px] sm:w-[380px] w-full border-2 border-customBlue shadow-card flex items-center justify-center">
                         <div className="text-center">
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                            <p className="text-black text-[14px]">{description}</p>
+                            <p className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Service Description: </span>{description}</p>
                             <ul className="list-disc list-inside mt-5 pl-5">
                                 {components.map((component, index) => (
-                                    <li key={index} className="text-black text-[14px] mt-5">{component.subpoint}</li>
+                                    <li key={index} className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Key Components:</span>{component.subpoint}</li>
                                 ))}
                             </ul>
                             <p className="text-black text-[14px]"><span className="font-aquirebold text-customBlue">Benefits:</span> {benefits}</p>
@@ -41,11 +41,11 @@ const ServiceCard = ({ title, description, components, benefits, index }) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-[#ffffff] p-5 rounded-2xl h-[550px] sm:w-[350px] w-full border-2 border-customBlue shadow-card flex items-center justify-center"
+                    className="bg-[#ffffff] p-5 rounded-2xl h-[600px] sm:w-[350px] w-full border-2 border-customBlue shadow-card flex items-center justify-center"
                 >
                     <div className="text-center">
                         <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                        <p className="text-black text-[14px]">{description}</p>
+                        <p className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Service Description: </span>{description}</p>
                         <ul className="mt-5 list-disc list-inside">
                             {components.map((component, index) => (
                                 <li key={index} className="text-black text-[14px] mt-5">{component.subpoint}</li>

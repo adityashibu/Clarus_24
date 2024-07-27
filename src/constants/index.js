@@ -330,7 +330,7 @@ const ciso_services = [
         subpoints: [
             {
                 title: "CISO Strategy Development",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
@@ -346,7 +346,7 @@ const ciso_services = [
             },
             {
                 title: "CISO as a Service (CaaS)",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "On-demand CISO Expertise: Access to experienced CISOs as needed.",
@@ -362,7 +362,7 @@ const ciso_services = [
             },
             {
                 title: "Compliance and Risk Management",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
@@ -378,7 +378,7 @@ const ciso_services = [
             },
             {
                 title: "Security Awareness and Training",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
@@ -394,7 +394,7 @@ const ciso_services = [
             },
             {
                 title: "Incident Response and Management",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
@@ -410,7 +410,7 @@ const ciso_services = [
             },
             {
                 title: "Continuous Security Monitoring",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
@@ -426,7 +426,7 @@ const ciso_services = [
             },
             {
                 title: "Data Protection and Privacy",
-                descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
+                description: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
                         subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
