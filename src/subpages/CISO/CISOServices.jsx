@@ -9,7 +9,9 @@ import { SectionWrapper } from '../../hoc';
 import { Tilt } from 'react-tilt';
 import { useMediaQuery } from 'react-responsive';
 
-const ServiceCard = ({ title, point, index }) => {
+import { ciso_services } from '../../constants';
+
+const ServiceCard = ({ title, description, components, benefits, index }) => {
     const isSmallScreen = useMediaQuery({ query: '(max-width: 640px)' });
 
     return (
@@ -19,10 +21,16 @@ const ServiceCard = ({ title, point, index }) => {
         >
             {isSmallScreen ? (
                 <div className="md:mt-0 -mt-5">
-                    <div className="bg-[#ffffff] p-5 rounded-2xl h-[200px] sm:w-[360px] w-full border-2 border-customBlue shadow-card flex items-center justify-center">
+                    <div className="bg-[#ffffff] p-5 rounded-2xl h-[550px] sm:w-[380px] w-full border-2 border-customBlue shadow-card flex items-center justify-center">
                         <div className="text-center">
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                            <p className="text-black text-[14px]">{point}</p>
+                            <p className="text-black text-[14px]">{description}</p>
+                            <ul className="list-disc list-inside mt-5 pl-5">
+                                {components.map((component, index) => (
+                                    <li key={index} className="text-black text-[14px] mt-5">{component.subpoint}</li>
+                                ))}
+                            </ul>
+                            <p className="text-black text-[14px]"><span className="font-aquirebold text-customBlue">Benefits:</span> {benefits}</p>
                         </div>
                     </div>
                 </div>
@@ -33,11 +41,17 @@ const ServiceCard = ({ title, point, index }) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-[#ffffff] p-5 rounded-2xl h-[200px] sm:w-[300px] w-full border-2 border-customBlue shadow-card flex items-center justify-center"
+                    className="bg-[#ffffff] p-5 rounded-2xl h-[550px] sm:w-[350px] w-full border-2 border-customBlue shadow-card flex items-center justify-center"
                 >
                     <div className="text-center">
                         <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                        <p className="text-black text-[14px]">{point}</p>
+                        <p className="text-black text-[14px]">{description}</p>
+                        <ul className="mt-5 list-disc list-inside">
+                            {components.map((component, index) => (
+                                <li key={index} className="text-black text-[14px] mt-5">{component.subpoint}</li>
+                            ))}
+                        </ul>
+                        <p className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Benefits:</span> {benefits}</p>
                     </div>
                 </Tilt>
             )}
@@ -51,13 +65,20 @@ const CISOServices = () => {
             <motion.div variants={textVariant()}>
                 <h2 className={styles.sectionHeadText}>Clarus<span className="font-altedin">24</span>'s CISO Services Include</h2>
             </motion.div>
-            {/* <div className="flex flex-wrap gap-7 justify-center mt-20">
-                {apple_adoption[0].subpoints.map((subpoint, index) => (
-                    <ServiceCard key={index} index={index} title={subpoint.title} point={subpoint.point} />
+            <div className="flex flex-wrap gap-7 justify-center mt-20">
+                {ciso_services[0].subpoints.map((subpoint, index) => (
+                    <ServiceCard
+                        key={index}
+                        index={index}
+                        title={subpoint.title}
+                        description={subpoint.description}
+                        components={subpoint.components}
+                        benefits={subpoint.benefits}
+                    />
                 ))}
-            </div> */}
+            </div>
         </section>
-    )
+    );
 };
 
 export default SectionWrapper(CISOServices, "CISOServices");

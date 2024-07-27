@@ -10,11 +10,6 @@ const CISOPage = () => {
             <div>
                 <CISOServices />
             </div>
-            {/* <div>
-                <AppleAbout />
-                <AppleServices />
-                <AppleReasons />
-            </div> */}
         </section>
     )
 }

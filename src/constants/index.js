@@ -349,16 +349,16 @@ const ciso_services = [
                 descripton: "Assist organizations in developing a comprehensive cybersecurity strategy. This includes assessing the current security posture, identifying risks, and creating a long-term roadmap.",
                 components: [
                     {
-                        subpoint: "Security Posture Assessment: Conduct thorough assessments to understand the current security state.",
+                        subpoint: "On-demand CISO Expertise: Access to experienced CISOs as needed.",
                     },
                     {
-                        subpoint: "Risk Management Strategy: Develop strategies to manage and mitigate risks.",
+                        subpoint: "Flexible Engagement Models: Part-time, interim, or virtual CISO services.",
                     },
                     {
-                        subpoint: "Long-term Cybersecurity Roadmap: Create a strategic plan outlining the security initiatives for the next 3-5 years.",
+                        subpoint: "Tailored Security Programs: Customized programs to fit the specific needs of your organization.",
                     }
                 ],
-                benefits: "Enhanced security alignment with business goals, proactive threat management, strategic investment in security.",
+                benefits: "Cost-effective, scalable, access to top-tier security professionals.",
             },
             {
                 title: "Compliance and Risk Management",
