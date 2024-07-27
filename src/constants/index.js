@@ -444,6 +444,33 @@ const ciso_services = [
     },
 ];
 
+const ciso_reasons = [
+    {
+        subpoints: [
+            {
+                title: "Cost-Effectiveness",
+                description: "Save on the cost of hiring a full-time CISO while gaining access to top-tier security expertise.",
+            },
+            {
+                title: "Customizable Solutions",
+                description: "Tailor our services to meet your specific business needs and regulatory requirements.",
+            },
+            {
+                title: "Experienced Professionals",
+                description: "Work with seasoned cybersecurity experts with a proven track record.",
+            },
+            {
+                title: "Scalable Services",
+                description: "Easily scale our services up or down based on your business size and security needs.",
+            },
+            {
+                title: "Proactive Security",
+                description: "Shift from reactive to proactive security management, ensuring better preparedness against threats.",
+            },
+        ],
+    },
+];
+
 const certificationsOdd = [
     { icon: acp },
     { icon: aws },
@@ -543,5 +570,5 @@ const faqs = [
 
 export {
     services, about, testimonials, digitalWorkspace, certificationsOdd, certificationsEven, partners, faqs, digitalWorkspaceFooter,
-    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services,
+    apple_adoption, apple_adoption_services, apple_adoption_reasons, ciso_services, ciso_reasons,
 };
