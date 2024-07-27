@@ -59,17 +59,14 @@ const ServiceCard = ({ title, description, components, benefits, index }) => {
     );
 }
 
-const CISOServices = () => {
+const CISOServices1 = () => {
     return (
         <section>
-            <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Clarus<span className="font-altedin">24</span>'s CISO Services Include</h2>
-            </motion.div>
-            <div className="flex flex-wrap gap-7 justify-center mt-20">
-                {ciso_services[0].subpoints.slice(0, 3).map((subpoint, index) => (
+            <div className="flex flex-wrap gap-7 justify-center -mt-[75px]">
+                {ciso_services[0].subpoints.slice(3, 6).map((subpoint, index) => (
                     <ServiceCard
                         key={index}
-                        index={index}
+                        index={index + 3}
                         title={subpoint.title}
                         description={subpoint.description}
                         components={subpoint.components}
@@ -81,4 +78,4 @@ const CISOServices = () => {
     );
 };
 
-export default SectionWrapper(CISOServices, "CISOServices");
+export default SectionWrapper(CISOServices1, "CISOServices1");
