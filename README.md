@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/80cf3c75-66be-4dbd-bdfc-9f35a1745758/deploy-status)](https://app.netlify.com/sites/adityashibu/deploys)
 
 ## How to run
-- First make sure you have node installed (preferably 20.x or higher) [![Node Website](https://nodejs.org/static/images/logo.svg)](https://nodejs.org/en/download/package-manager/)
+- First make sure you have node installed (preferably 20.x or higher)<br> [![Node Website](https://nodejs.org/static/images/logo.svg)](https://nodejs.org/en/download/package-manager/)
 
 - To install the required packages, run 
     ```shell
