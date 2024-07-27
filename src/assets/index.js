@@ -53,6 +53,7 @@ import devicemgmt from "./lotties/DeviceMgmt.json";
 import apple_protection from "./lotties/apple_protection.json";
 import CISO from "./lotties/CISO.json"
 import helpdesk from "./lotties/Helpdesk.json";
+import mobileDevice from "./lotties/MobileDevice.json";
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -106,6 +107,7 @@ export {
   apple_protection,
   CISO,
   helpdesk,
+  mobileDevice,
 
   clarus,
 };

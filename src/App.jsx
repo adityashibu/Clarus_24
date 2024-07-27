@@ -3,6 +3,7 @@ import { About, Hero, Navbar, StarsCanvas, Milestones, DigitalWorkspace, Team, F
 import Partners from './components/Partners';
 import { Analytics } from "@vercel/analytics/react";
 import { Apple, CISO, Helpdesk } from './subpages/digital-Workspace/';
+import Mobile from './subpages/digital-Workspace/MobileManager';
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/apple-adoption" element={<Apple />} />
           <Route path="/ciso-services" element={<CISO />} />
           <Route path="/helpdesk" element={<Helpdesk />} />
+          <Route path="/mobile-manager" element={<Mobile />} />
         </Routes>
       </div>
     </Router>
