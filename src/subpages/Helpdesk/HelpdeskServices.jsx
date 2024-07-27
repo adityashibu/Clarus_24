@@ -47,7 +47,7 @@ const HelpdeskServices = () => {
     return (
         <section>
             <motion.div variants={textVariant()}>
-                <h2 className={styles.sectionHeadText}>Benefits of Our CISO Services</h2>
+                <h2 className={styles.sectionHeadText}>Clarus24's Helpdesk Services Include</h2>
             </motion.div>
             <div className="flex flex-wrap gap-7 justify-center mt-20">
                 {helpdesk_services[0].subpoints.map((subpoint, index) => (
