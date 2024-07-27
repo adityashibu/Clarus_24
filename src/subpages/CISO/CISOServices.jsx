@@ -27,7 +27,7 @@ const ServiceCard = ({ title, description, components, benefits, index }) => {
                             <p className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Service Description: </span>{description}</p>
                             <ul className="list-disc list-inside mt-5 pl-5">
                                 {components.map((component, index) => (
-                                    <li key={index} className="text-black text-[14px] mt-5"><span className="font-aquirebold text-customBlue">Key Components:</span>{component.subpoint}</li>
+                                    <li key={index} className="text-black text-[14px] mt-5">{component.subpoint}</li>
                                 ))}
                             </ul>
                             <p className="text-black text-[14px]"><span className="font-aquirebold text-customBlue">Benefits:</span> {benefits}</p>
