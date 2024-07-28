@@ -9,7 +9,7 @@ const Socials = () => {
             <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:text-gray-300 px-2" />
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/clarus24/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-gray-300 px-2" />
             </a>
             <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">

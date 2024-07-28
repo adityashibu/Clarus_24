@@ -147,7 +147,7 @@ const Contact = () => {
         </p>
         <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Call Us</h2>
         <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">
-          +91 7676111331
+          +91 9449341722
         </p>
       </motion.div>
     </div>

@@ -46,7 +46,7 @@ const Footer = () => {
                         Hebbal, Bengaluru - 560024
                     </p>
                     <p className="mb-2">
-                        <span className="font-semibold">Phone:</span> +91 7676111331
+                        <span className="font-semibold">Phone:</span> +91 9449341722
                     </p>
                     <p>
                         <span className="font-semibold">Email:</span> hello@Clarus24.com
