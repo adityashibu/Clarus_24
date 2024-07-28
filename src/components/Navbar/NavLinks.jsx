@@ -40,9 +40,9 @@ const NavLinks = () => {
                       <h1 className="text-2xl font-semibold text-customBlue font-aquire">
                         {mysublinks.Head}
                       </h1>
-                      <h3 className="text-customBlue text-[15px] font-aquirebold">{mysublinks.meaning_title}</h3>
-                      <p className="mt-2 text-customBlue text-[12px] mb-5">{mysublinks.meaning}</p>
-                      <div className="mt-5">
+                      <h3 className="text-customGreen font-bold text-[15px] italic mt-3 lowercase">{mysublinks.meaning_title}</h3>
+                      <p className="text-customGreen text-[12px] mb-5 italic lowercase">{mysublinks.meaning}</p>
+                      <div className="mt-3">
                         {mysublinks.sublink.map((slink, slinkid) => (
                           <li className="text-sm text-gray-600 my-2.5" key={slinkid}>
                             <Link to={slink.link} className="hover:text-primary" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>

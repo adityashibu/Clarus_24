@@ -67,7 +67,7 @@ export const links = [
           { name: "Phishing Attack Simulation", link: "/coming-soon" },
         ],
         meaning_title: "risk (noun)",
-        meaning: "Exposure to the chance of injury or loss; a hazard or dangerous chance.",
+        meaning: "Risk refers to the possibility or likelihood of suffering harm, injury, or loss due to an uncertain event or condition.",
       },
       {
         // Head: "Managed Security",

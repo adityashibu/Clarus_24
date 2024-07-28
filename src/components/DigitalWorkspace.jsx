@@ -33,9 +33,14 @@ const ServiceCard = ({ title, meaning_title, meaning, description, index, backli
                                 <img src={icon} alt={`${title} icon`} className="w-12 h-12 mb-2" />
                             )}
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                            <h3 className="text-customBlue text-[15px] font-aquirebold">{meaning_title}</h3>
-                            <p className="mt-2 text-customBlue text-[12px] mb-5">{meaning}</p>
-                            <p className="mt-2 text-black text-[15px] font-aquirelight">{description}</p>
+                            <h3 className="text-customGreen text-[15px] font-bold lowercase italic mt-2">{meaning_title}</h3>
+                            <p className="text-customGreen text-[12px] mb-5 lowercase italic">{meaning}</p>
+                            <p className="mt-2 text-black text-[15px]">{description}</p>
+                        </div>
+                        <div className="absolute bottom-4 right-4">
+                            <svg width="24" height="24" fill="currentColor" className="text-customBlue">
+                                <path d="M12 0L10.59 1.41 20.17 11H0v2h20.17l-9.58 9.59L12 24l12-12L12 0z" />
+                            </svg>
                         </div>
                     </div>
                     <div className="flip-card-back flex flex-col p-5">
@@ -44,12 +49,17 @@ const ServiceCard = ({ title, meaning_title, meaning, description, index, backli
                             <ul className="mt-2">
                                 {backlinks.map((link, index) => (
                                     <li key={index} className="mb-2 text-black hover:underline hover:text-customBlue">
-                                        {/* <Link to={link.link} className="text-black hover:underline hover:text-customBlue" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> */}
-                                        {link.name}
-                                        {/* </Link> */}
+                                        <Link to={link.link} className="text-black hover:underline hover:text-customBlue" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                                            {link.name}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
+                        </div>
+                        <div className="absolute bottom-4 right-4">
+                            <svg width="24" height="24" fill="currentColor" className="text-customBlue">
+                                <path d="M12 0L10.59 1.41 20.17 11H0v2h20.17l-9.58 9.59L12 24l12-12L12 0z" />
+                            </svg>
                         </div>
                     </div>
                 </div>

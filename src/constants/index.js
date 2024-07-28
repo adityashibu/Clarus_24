@@ -96,13 +96,20 @@ const services = [
         meaning_title: "defense (noun)",
         meaning: "The ability to protect against attack or harm, or something used to protect against attack or harm.",
         icon: shield,
-        description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes.",
+        description: "Our Managed Defense service provides continuous monitoring and real-time threat detection to keep your business safe from cyber threats. We ensure your security posture remains robust against potential attacks.",
+        // backlinks: [
+        //     { name: "Managed Detection and Response", link: "/mdr" },
+        //     { name: "Extended Detection and Response", link: "/xdr" },
+        //     { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
+        //     { name: "Managed Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
+        //     { name: "Digital Forensics and Incident Response", link: "/digital-forensics" },
+        // ]
         backlinks: [
-            { name: "Managed Detection and Response", link: "/mdr" },
-            { name: "Extended Detection and Response", link: "/xdr" },
-            { name: "Endpoint Detection and Response", link: "/endpoint-detection" },
-            { name: "Managed Microsoft Sentinel Detection and Response", link: "/microsoft-detection" },
-            { name: "Digital Forensics and Incident Response", link: "/digital-forensics" },
+            { name: "Managed Detection and Response", link: "/coming-soon" },
+            { name: "Extended Detection and Response", link: "/coming-soon" },
+            { name: "Endpoint Detection and Response", link: "/coming-soon" },
+            { name: "Managed Microsoft Sentinel Detection and Response", link: "/coming-soon" },
+            { name: "Digital Forensics and Incident Response", link: "/coming-soon" },
         ]
     },
     {
@@ -110,14 +117,23 @@ const services = [
         meaning_title: "endcompute (noun)",
         meaning: "Technologies that gives your workforce secure, remote access to applications, desktops, and data.",
         icon: computer,
-        description: "Co-create solutions tailored to your industry's unique hybrid technology environment.",
+        description: "Our Managed Endcompute service ensures optimal performance and security of end-user devices. This allows your employees to work efficiently and securely from anywhere.",
+        // backlinks: [
+        //     { name: "Mobile Device Manager", link: "/mobile-manager" },
+        //     { name: "Compliance assessment and Remediation", link: "/compliance-assessment" },
+        //     { name: "Cross Platform Integration", link: "/cross-platform" },
+        //     { name: "Apple Adoption", link: "/apple-adoption" },
+        //     { name: "Configuration Health Check", link: "/configuration-check" },
+        //     { name: "Hardware Health Check", link: "/hardware-check" },
+        //     { name: "Multilingual Helpdesk", link: "/helpdesk" },
+        // ]
         backlinks: [
-            { name: "Mobile Device Manager", link: "/mobile-manager" },
-            { name: "Compliance assessment and Remediation", link: "/compliance-assessment" },
-            { name: "Cross Platform Integration", link: "/cross-platform" },
+            { name: "Mobile Device Manager", link: "/coming-soon" },
+            { name: "Compliance assessment and Remediation", link: "/coming-soon" },
+            { name: "Cross Platform Integration", link: "/coming-soon" },
             { name: "Apple Adoption", link: "/apple-adoption" },
-            { name: "Configuration Health Check", link: "/configuration-check" },
-            { name: "Hardware Health Check", link: "/hardware-check" },
+            { name: "Configuration Health Check", link: "/coming-soon" },
+            { name: "Hardware Health Check", link: "/coming-soon" },
             { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ]
     },
@@ -126,14 +142,22 @@ const services = [
         meaning_title: "risk (noun)",
         meaning: "Exposure to the chance of injury or loss; a hazard or dangerous chance.",
         icon: risk,
-        description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation.",
+        description: "Our Managed Risk service identifies and mitigates IT-related risks with comprehensive assessments and tailored strategies. We help ensure secure operations by minimizing risk exposure.",
+        // backlinks: [
+        //     { name: "Penetration Testing", link: "/pentesting" },
+        //     { name: "Vulnerability Management as a Service", link: "/vmaas" },
+        //     { name: "CISO as a Service", link: "/ciso-services" },
+        //     { name: "Cyber Security Controls Assessment", link: "/cybersecurity-controls" },
+        //     { name: "Web Application Security Testing", link: "/webapplication-security" },
+        //     { name: "Phishing Attack Simulation", link: "/phishing-simulation" },
+        // ]
         backlinks: [
-            { name: "Penetration Testing", link: "/pentesting" },
-            { name: "Vulnerability Management as a Service", link: "/vmaas" },
+            { name: "Penetration Testing", link: "/coming-soon" },
+            { name: "Vulnerability Management as a Service", link: "/coming-soon" },
             { name: "CISO as a Service", link: "/ciso-services" },
-            { name: "Cyber Security Controls Assessment", link: "/cybersecurity-controls" },
-            { name: "Web Application Security Testing", link: "/webapplication-security" },
-            { name: "Phishing Attack Simulation", link: "/phishing-simulation" },
+            { name: "Cyber Security Controls Assessment", link: "/coming-soon" },
+            { name: "Web Application Security Testing", link: "/coming-soon" },
+            { name: "Phishing Attack Simulation", link: "/coming-soon" },
         ]
     },
     {
@@ -141,14 +165,22 @@ const services = [
         meaning_title: "security (noun)",
         meaning: "The protection of people, organizations, countries, etc. against a possible attack or other crime.",
         icon: security,
-        description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization.",
+        description: "Our Managed Security service offers comprehensive protection for your IT infrastructure with solutions like firewall management and incident response to combat evolving threats.",
+        // backlinks: [
+        //     { name: "Managed Endpoint Protection", link: "/epp" },
+        //     { name: "Managed Endpoint Security", link: "/endpoint-security" },
+        //     { name: "Darktrace/Email as a Service", link: "/darktrace" },
+        //     { name: "Managed Data Security", link: "/data-security" },
+        //     { name: "Threat and Risk Intelligence", link: "/tri" },
+        //     { name: "Identity and Access Management", link: "/iam" },
+        // ]
         backlinks: [
-            { name: "Managed Endpoint Protection", link: "/epp" },
-            { name: "Managed Endpoint Security", link: "/endpoint-security" },
-            { name: "Darktrace/Email as a Service", link: "/darktrace" },
-            { name: "Managed Data Security", link: "/data-security" },
-            { name: "Threat and Risk Intelligence", link: "/tri" },
-            { name: "Identity and Access Management", link: "/iam" },
+            { name: "Managed Endpoint Protection", link: "/coming-soon" },
+            { name: "Managed Endpoint Security", link: "/coming-soon" },
+            { name: "Darktrace/Email as a Service", link: "/coming-soon" },
+            { name: "Managed Data Security", link: "/coming-soon" },
+            { name: "Threat and Risk Intelligence", link: "/coming-soon" },
+            { name: "Identity and Access Management", link: "/coming-soon" },
         ]
     },
 ];
