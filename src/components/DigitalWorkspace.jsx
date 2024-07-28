@@ -30,7 +30,7 @@ const ServiceCard = ({ title, meaning_title, meaning, description, index, backli
                     <div className="flip-card-front flex flex-col items-left">
                         <div>
                             {icon && (
-                                <img src={icon} alt={`${title} icon`} className="w-10 h-10 mb-2" />
+                                <img src={icon} alt={`${title} icon`} className="w-12 h-12 mb-2" />
                             )}
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
                             <h3 className="text-customBlue text-[15px] font-aquirebold">{meaning_title}</h3>
