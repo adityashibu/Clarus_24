@@ -37,10 +37,10 @@ export const links = [
           { name: "Mobile Device Manager", link: "/coming-soon" },
           { name: "Compliance assessment and Remediation", link: "/coming-soon" },
           { name: "Cross Platform Integration", link: "/coming-soon" },
-          { name: "Apple Adoption", link: "/coming-soon" },
+          { name: "Apple Adoption", link: "/apple-adoption" },
           { name: "Configuration Health Check", link: "/coming-soon" },
           { name: "Hardware Health Check", link: "/coming-soon" },
-          { name: "Multilingual Helpdesk", link: "/coming-soon" },
+          { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
       },
       {
@@ -57,7 +57,7 @@ export const links = [
         sublink: [
           { name: "Penetration Testing", link: "/coming-soon" },
           { name: "Vulnerability Management as a Service", link: "/coming-soon" },
-          { name: "CISO as a Service", link: "/coming-soon" },
+          { name: "CISO as a Service", link: "/ciso-services" },
           { name: "Cyber Security Controls Assessment", link: "/coming-soon" },
           { name: "Web Application Security Testing", link: "/coming-soon" },
           { name: "Phishing Attack Simulation", link: "/coming-soon" },
