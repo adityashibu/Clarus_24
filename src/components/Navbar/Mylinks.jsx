@@ -20,6 +20,8 @@ export const links = [
           { name: "Managed Microsoft Sentinel Detection and Response", link: "/coming-soon" },
           { name: "Digital Forensics and Incident Response", link: "/coming-soon" },
         ],
+        meaning_title: "defense (noun)",
+        meaning: "The ability to protect against attack or harm, or something used to protect against attack or harm.",
       },
       {
         // Head: "Managed EndCompute",
@@ -42,6 +44,8 @@ export const links = [
           { name: "Hardware Health Check", link: "/coming-soon" },
           { name: "Multilingual Helpdesk", link: "/helpdesk" },
         ],
+        meaning_title: "endcompute (noun)",
+        meaning: "Technologies that gives your workforce secure, remote access to applications, desktops, and data.",
       },
       {
         // Head: "Managed Risk",
@@ -62,6 +66,8 @@ export const links = [
           { name: "Web Application Security Testing", link: "/coming-soon" },
           { name: "Phishing Attack Simulation", link: "/coming-soon" },
         ],
+        meaning_title: "risk (noun)",
+        meaning: "Exposure to the chance of injury or loss; a hazard or dangerous chance.",
       },
       {
         // Head: "Managed Security",
@@ -82,6 +88,8 @@ export const links = [
           { name: "Threat and Risk Intelligence", link: "/coming-soon" },
           { name: "Identity and Access Management", link: "/coming-soon" },
         ],
+        meaning_title: "security (noun)",
+        meaning: "The protection of people, organizations, countries, etc. against a possible attack or other crime.",
       },
     ],
   },

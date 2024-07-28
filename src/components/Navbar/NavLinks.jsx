@@ -40,6 +40,8 @@ const NavLinks = () => {
                       <h1 className="text-2xl font-semibold text-customBlue font-aquire">
                         {mysublinks.Head}
                       </h1>
+                      <h3 className="text-customBlue text-[15px] font-aquirebold">{mysublinks.meaning_title}</h3>
+                      <p className="mt-2 text-customBlue text-[12px] mb-5">{mysublinks.meaning}</p>
                       <div className="mt-5">
                         {mysublinks.sublink.map((slink, slinkid) => (
                           <li className="text-sm text-gray-600 my-2.5" key={slinkid}>
