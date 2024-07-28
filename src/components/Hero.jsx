@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[0px] md:pt-0 -mt-20">
+    <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[0px] md:pt-0 -mt-[100px]">
       <div className={`${styles.paddingX} flex flex-col md:flex-row items-center gap-8`}>
         <motion.div
           variants={fadeIn('up', 'spring', 0.5)}
@@ -52,7 +52,7 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <ScrollLink to="about-us" smooth={true} duration={500} offset={-50}>
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2 cursor-pointer md:mt-0 mt-5">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2 cursor-pointer md:mt-0 mt-[20px]">
             <motion.div
               animate={{
                 y: [0, 24, 0]
