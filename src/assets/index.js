@@ -59,6 +59,7 @@ import CISO from "./lotties/CISO.json"
 import helpdesk from "./lotties/Helpdesk.json";
 import mobileDevice from "./lotties/MobileDevice.json";
 import testing from "./lotties/Testing.json";
+import comingsoon from "./lotties/comingsoon.json";
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -110,6 +111,7 @@ export {
   computer,
   risk,
   security,
+  comingsoon,
 
   database,
   devicemgmt,

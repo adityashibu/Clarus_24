@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { About, Hero, Navbar, StarsCanvas, Milestones, DigitalWorkspace, Team, FAQAccordion, Contact, Footer, ScrollUp } from './components';
 import Partners from './components/Partners';
 import { Analytics } from "@vercel/analytics/react";
-import { Apple, CISO, Helpdesk, Mobile, WebAppTesting } from './subpages/digital-Workspace/';
+import { Apple, CISO, ComingSoon, Helpdesk, Mobile, WebAppTesting } from './subpages/digital-Workspace/';
 
 const App = () => {
   return (
@@ -40,6 +40,7 @@ const App = () => {
           <Route path="/helpdesk" element={<Helpdesk />} />
           <Route path="/mobile-manager" element={<Mobile />} />
           <Route path="/webapplication-security" element={<WebAppTesting />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
         </Routes>
       </div>
     </Router>

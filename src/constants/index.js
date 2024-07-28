@@ -60,12 +60,6 @@ export const navLinks = [
         footerurl: "about-us"
     },
     {
-        id: "services",
-        title: "Services",
-        url: "#our-services",
-        footerurl: "our-services"
-    },
-    {
         id: "contact",
         title: "Contact",
         url: "#contact",

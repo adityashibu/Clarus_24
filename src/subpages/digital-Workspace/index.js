@@ -3,6 +3,7 @@ import CISO from "./CISO-Services";
 import Helpdesk from "./Helpdesk";
 import Mobile from "./MobileManager";
 import WebAppTesting from "./WebAppTesting";
+import ComingSoon from "./ComingSoon";
 
 export {
     Apple,
@@ -10,4 +11,5 @@ export {
     Helpdesk,
     Mobile,
     WebAppTesting,
+    ComingSoon,
 };

@@ -37,6 +37,9 @@ const Navbar = () => {
     }
   }, [location]);
 
+  const firstTwoLinks = navLinks.slice(0, 2);
+  const contact = navLinks[2];
+
   return (
     <nav className={`bg-customBlue z-50 md:fixed md:w-full transition-opacity duration-300 ${isFooterVisible ? 'opacity-100 md:opacity-0' : 'opacity-100'}`}>
       <div className="flex items-center font-medium justify-around">
@@ -54,7 +57,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
-          {navLinks.map((link) => (
+          {firstTwoLinks.map((link) => (
             <li key={link.id} className="cursor-pointer">
               <ScrollLink
                 to={link.url.substring(1)}
@@ -67,8 +70,8 @@ const Navbar = () => {
               </ScrollLink>
             </li>
           ))}
-          {/* <NavLinks /> */}
-          {/* {contact && (
+          <NavLinks />
+          {contact && (
             <li key={contact.id} className="cursor-pointer">
               <ScrollLink
                 to={contact.url.substring(1)}
@@ -80,7 +83,7 @@ const Navbar = () => {
                 {contact.title}
               </ScrollLink>
             </li>
-          )} */}
+          )}
         </ul>
         <div className="md:block hidden">
           {/* <Socials /> */}
@@ -100,7 +103,7 @@ const Navbar = () => {
           >
             <ion-icon name="close"></ion-icon>
           </div>
-          {navLinks.map((link) => (
+          {firstTwoLinks.map((link) => (
             <li key={link.id}>
               <ScrollLink
                 to={link.url.substring(1)}
@@ -116,8 +119,8 @@ const Navbar = () => {
               </ScrollLink>
             </li>
           ))}
-          {/* <NavLinks /> */}
-          {/* {contact && (
+          <NavLinks />
+          {contact && (
             <li key={contact.id}>
               <ScrollLink
                 to={contact.url.substring(1)}
@@ -132,7 +135,7 @@ const Navbar = () => {
                 {contact.title}
               </ScrollLink>
             </li>
-          )} */}
+          )}
           <div className="py-5 px-3">
             {/* <Socials /> */}
             {/* <HelpdeskButton /> */}
