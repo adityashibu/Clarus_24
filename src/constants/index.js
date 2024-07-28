@@ -99,6 +99,8 @@ export const servicesFooter = [
 const services = [
     {
         title: "Managed Defense",
+        meaning_title: "defense (noun)",
+        meaning: "The ability to protect against attack or harm, or something used to protect against attack or harm.",
         icon: shield,
         description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes.",
         backlinks: [
@@ -111,6 +113,8 @@ const services = [
     },
     {
         title: "Managed Endcompute",
+        meaning_title: "endcompute (noun)",
+        meaning: "A combination of technologies, policies, and processes that gives your workforce secure, remote access to applications, desktops, and data.",
         icon: computer,
         description: "Co-create solutions tailored to your industry's unique hybrid technology environment.",
         backlinks: [
@@ -125,6 +129,8 @@ const services = [
     },
     {
         title: "Managed Risk",
+        meaning_title: "risk (noun)",
+        meaning: "Exposure to the chance of injury or loss; a hazard or dangerous chance.",
         icon: risk,
         description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation.",
         backlinks: [
@@ -138,6 +144,8 @@ const services = [
     },
     {
         title: "Managed Security",
+        meaning_title: "security (noun)",
+        meaning: "The protection of people, organizations, countries, etc. against a possible attack or other crime.",
         icon: security,
         description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization.",
         backlinks: [

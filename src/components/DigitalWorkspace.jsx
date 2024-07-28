@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ title, description, index, backlinks, icon }) => {
+const ServiceCard = ({ title, meaning_title, meaning, description, index, backlinks, icon }) => {
     const [flipped, setFlipped] = useState(false);
 
     const handleFlip = () => {
@@ -33,18 +33,20 @@ const ServiceCard = ({ title, description, index, backlinks, icon }) => {
                                 <img src={icon} alt={`${title} icon`} className="w-10 h-10 mb-2" />
                             )}
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                            <p className="mt-2 text-black text-[14px]">{description}</p>
+                            <h3 className="text-customBlue text-[15px] font-aquirebold">{meaning_title}</h3>
+                            <p className="mt-2 text-customBlue text-[12px] mb-5">{meaning}</p>
+                            <p className="mt-2 text-black text-[15px] font-aquirelight">{description}</p>
                         </div>
                     </div>
                     <div className="flip-card-back flex flex-col p-5">
                         <div className="flex flex-col">
-                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">Links</h3>
+                            <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">Our Services</h3>
                             <ul className="mt-2">
                                 {backlinks.map((link, index) => (
-                                    <li key={index} className="mb-2">
-                                        <Link to={link.link} className="text-black hover:underline hover:text-customBlue" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                                            {link.name}
-                                        </Link>
+                                    <li key={index} className="mb-2 text-black hover:underline hover:text-customBlue">
+                                        {/* <Link to={link.link} className="text-black hover:underline hover:text-customBlue" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}> */}
+                                        {link.name}
+                                        {/* </Link> */}
                                     </li>
                                 ))}
                             </ul>
@@ -81,6 +83,8 @@ const DigitalWorkspace = () => {
                         key={service.title}
                         index={index}
                         title={service.title}
+                        meaning_title={service.meaning_title}
+                        meaning={service.meaning}
                         description={service.description}
                         backlinks={service.backlinks}
                         icon={service.icon}
