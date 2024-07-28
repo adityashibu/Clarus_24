@@ -18,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[0px] md:pt-0 -mt-[100px]">
+    <section className="relative w-full h-screen mx-auto flex justify-center items-center pt-[0px] md:pt-0 -mt-[200px]">
       <div className={`${styles.paddingX} flex flex-col md:flex-row items-center gap-8`}>
         <motion.div
           variants={fadeIn('up', 'spring', 0.5)}
@@ -38,7 +38,7 @@ const Hero = () => {
           variants={fadeIn('up', 'spring', 0.5)}
           initial="hidden"
           animate="show"
-          className="relative flex-shrink-0 md:opacity-100 z-10"
+          className="relative flex-shrink-0 md:opacity-100 z-10 mb-[50px]"
         >
           <div className="lottie-container md:w-[600px] md:h-[600px] w-[350px] h-[350px] pointer-events-none">
             <Lottie
@@ -50,9 +50,9 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center pt-[100px]">
         <ScrollLink to="about-us" smooth={true} duration={500} offset={-50}>
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2 cursor-pointer md:mt-0 mt-[20px]">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-customBlue flex justify-center items-start p-2 cursor-pointer">
             <motion.div
               animate={{
                 y: [0, 24, 0]
