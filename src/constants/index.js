@@ -39,7 +39,10 @@ import {
 
     // SVG Icons
     applelogo,
-    customercare,
+    shield,
+    computer,
+    risk,
+    security,
 
 } from "../assets";
 
@@ -55,6 +58,12 @@ export const navLinks = [
         title: "About",
         url: "#about-us",
         footerurl: "about-us"
+    },
+    {
+        id: "services",
+        title: "Services",
+        url: "#our-services",
+        footerurl: "our-services"
     },
     {
         id: "contact",
@@ -90,7 +99,7 @@ export const servicesFooter = [
 const services = [
     {
         title: "Managed Defense",
-        icon: web,
+        icon: shield,
         description: "Assess, strategize, plan and roadmap the plan to achieve the desired business outcomes.",
         backlinks: [
             { name: "Managed Detection and Response", link: "/mdr" },
@@ -102,7 +111,7 @@ const services = [
     },
     {
         title: "Managed Endcompute",
-        icon: mobile,
+        icon: computer,
         description: "Co-create solutions tailored to your industry's unique hybrid technology environment.",
         backlinks: [
             { name: "Mobile Device Manager", link: "/mobile-manager" },
@@ -116,7 +125,7 @@ const services = [
     },
     {
         title: "Managed Risk",
-        icon: backend,
+        icon: risk,
         description: "Migrate, modernize, and integrate workloads into optimal environments to advance your transformation.",
         backlinks: [
             { name: "Penetration Testing", link: "/pentesting" },
@@ -129,7 +138,7 @@ const services = [
     },
     {
         title: "Managed Security",
-        icon: creator,
+        icon: security,
         description: "Regularly evaluate progress, refine strategies, and prepare for the next phase of modernization.",
         backlinks: [
             { name: "Managed Endpoint Protection", link: "/epp" },

@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../styles/carouselVertical.css';
 
-const ServiceCard = ({ title, description, index, backlinks }) => {
+const ServiceCard = ({ title, description, index, backlinks, icon }) => {
     const [flipped, setFlipped] = useState(false);
 
     const handleFlip = () => {
@@ -29,6 +29,9 @@ const ServiceCard = ({ title, description, index, backlinks }) => {
                 <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
                     <div className="flip-card-front flex flex-col items-left">
                         <div>
+                            {icon && (
+                                <img src={icon} alt={`${title} icon`} className="w-10 h-10 mb-2" />
+                            )}
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
                             <p className="mt-2 text-black text-[14px]">{description}</p>
                         </div>

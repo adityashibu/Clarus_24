@@ -46,6 +46,10 @@ import splunk from "./partners/splunk.png";
 // SVG Icons
 import applelogo from "./svg/apple.svg";
 import customercare from "./svg/24x7customercare.svg";
+import shield from "./svg/shield.svg";
+import computer from "./svg/computer.svg";
+import risk from "./svg/risk.svg";
+import security from "./svg/security.svg";
 
 // Lottie Files
 import database from "./lotties/database.json";
@@ -54,6 +58,7 @@ import apple_protection from "./lotties/apple_protection.json";
 import CISO from "./lotties/CISO.json"
 import helpdesk from "./lotties/Helpdesk.json";
 import mobileDevice from "./lotties/MobileDevice.json";
+import testing from "./lotties/Testing.json";
 
 // Clarus Video
 import clarus from "./clarus24_white.mp4"
@@ -101,6 +106,10 @@ export {
 
   applelogo,
   customercare,
+  shield,
+  computer,
+  risk,
+  security,
 
   database,
   devicemgmt,
@@ -108,6 +117,7 @@ export {
   CISO,
   helpdesk,
   mobileDevice,
+  testing,
 
   clarus,
 };
