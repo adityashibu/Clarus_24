@@ -114,7 +114,7 @@ const services = [
     {
         title: "Managed Endcompute",
         meaning_title: "endcompute (noun)",
-        meaning: "A combination of technologies, policies, and processes that gives your workforce secure, remote access to applications, desktops, and data.",
+        meaning: "Technologies that gives your workforce secure, remote access to applications, desktops, and data.",
         icon: computer,
         description: "Co-create solutions tailored to your industry's unique hybrid technology environment.",
         backlinks: [
