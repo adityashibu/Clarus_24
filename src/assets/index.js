@@ -27,7 +27,7 @@ import googlearc from "./tech/GoogleArc.png";
 import jadminpro from "./tech/jadminpro.png";
 import jadminprotect from "./tech/jadminprotect.png";
 import jamb from "./tech/jamb.png";
-import jamf100 from "./tech/Jamf100.png";
+// import jamf100 from "./tech/Jamf100.png";
 import japro from "./tech/japro.png";
 import japrotect from "./tech/japrotect.png";
 import jconsultant from "./tech/jconsultant.png";
@@ -35,6 +35,8 @@ import jcsecurity from "./tech/jcsecurity.png";
 import jeng from "./tech/jeng.png";
 import jproexpert from "./tech/jproexpert.png";
 import jtechpro from "./tech/jtechpro.png";
+import ceh from "./tech/CEH.png";
+import chfi from "./tech/CHFI.png";
 
 // For partners
 import apple from "./partners/apple.png";
@@ -90,7 +92,7 @@ export {
   jadminpro,
   jadminprotect,
   jamb,
-  jamf100,
+  // jamf100,
   japro,
   japrotect,
   jconsultant,
@@ -98,6 +100,8 @@ export {
   jeng,
   jproexpert,
   jtechpro,
+  ceh,
+  chfi,
 
   apple,
   forcepoint,

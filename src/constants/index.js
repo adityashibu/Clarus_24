@@ -21,7 +21,7 @@ import {
     jadminpro,
     jadminprotect,
     jamb,
-    jamf100,
+    // jamf100,
     japro,
     japrotect,
     jconsultant,
@@ -29,6 +29,9 @@ import {
     jeng,
     jproexpert,
     jtechpro,
+    ceh,
+    chfi,
+
 
     // Partners
     apple,
@@ -577,32 +580,28 @@ const helpdesk_reasons = [
 ];
 
 const certificationsOdd = [
+    { icon: jadminprotect },
     { icon: acp },
-    { icon: aws },
     { icon: az900 },
+    { icon: japrotect },
     { icon: cisco },
+    { icon: jproexpert },
     { icon: cspo },
+    { icon: aws },
     { icon: gc },
     { icon: googlearc },
-    { icon: jadminprotect },
-    { icon: jamf100 },
-    { icon: japrotect },
-    { icon: jcsecurity },
-    { icon: jproexpert },
 ];
 
 const certificationsEven = [
-    { icon: ait },
     { icon: aws2 },
     { icon: cc },
+    { icon: ceh },
+    { icon: ait },
     { icon: ciso },
     { icon: dp100 },
     { icon: google },
-    { icon: jadminpro },
-    { icon: jamb },
     { icon: japro },
-    { icon: jconsultant },
-    { icon: jeng },
+    { icon: chfi },
     { icon: jtechpro },
 ];
 
