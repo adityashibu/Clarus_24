@@ -37,6 +37,8 @@ import jproexpert from "./tech/jproexpert.png";
 import jtechpro from "./tech/jtechpro.png";
 import ceh from "./tech/CEH.png";
 import chfi from "./tech/CHFI.png";
+import microsoftexpert from "./tech/microsoftexpert.png";
+import splunkexpert from "./tech/splunk.png";
 
 // For partners
 import apple from "./partners/apple.png";
@@ -102,6 +104,8 @@ export {
   jtechpro,
   ceh,
   chfi,
+  microsoftexpert,
+  splunkexpert,
 
   apple,
   forcepoint,

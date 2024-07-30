@@ -46,6 +46,8 @@ import {
     computer,
     risk,
     security,
+    microsoftexpert,
+    splunkexpert,
 
 } from "../assets";
 
@@ -590,6 +592,7 @@ const certificationsOdd = [
     { icon: aws },
     { icon: gc },
     { icon: googlearc },
+    { icon: microsoftexpert },
 ];
 
 const certificationsEven = [
@@ -603,6 +606,7 @@ const certificationsEven = [
     { icon: japro },
     { icon: chfi },
     { icon: jtechpro },
+    { icon: splunkexpert },
 ];
 
 const partners = [
