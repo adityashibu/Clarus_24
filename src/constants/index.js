@@ -198,10 +198,10 @@ const about = [
         title: "Hours of Support",
         count: 700,
     },
-    {
-        title: "Smart Workers",
-        count: 7,
-    }
+    // {
+    //     title: "Smart Workers",
+    //     count: 7,
+    // }
 ];
 
 const digitalWorkspace = [
