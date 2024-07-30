@@ -13,6 +13,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -39,6 +40,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Clarus24",
           from_email: form.email,
+          from_phone: form.phone,
           to_email: "contact@clarus24.com",
           message: form.message,
         },
@@ -92,6 +94,19 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-customBlue font-aquire font-medium mb-4">Your Number</span>
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              onInput={(e) => e.target.value = e.target.value.replace(/[^0-9+]/g, '')}
+              pattern="\+?[0-9]{1,3}[0-9]{10}"
+              maxLength="13"
               className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
             />
           </label>
