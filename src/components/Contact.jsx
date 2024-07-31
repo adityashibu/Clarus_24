@@ -55,6 +55,7 @@ const Contact = () => {
             name: "",
             email: "",
             message: "",
+            phone: "",
           });
         },
         (error) => {
