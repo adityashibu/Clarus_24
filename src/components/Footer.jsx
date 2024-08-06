@@ -40,10 +40,17 @@ const Footer = () => {
                 {/* First Column */}
                 <div className="flex-1">
                     <h2 className="text-5xl font-bold mb-4 font-aquirebold">Clarus<span className="font-altedinbold">24</span></h2>
+                    <h2 className="text-xl font-bold mb-2 font-aquirelight">India:</h2>
                     <p className="mb-4">
                         Reg RMZ Latitude Commercial 10th Floor,<br />
                         Wework Bellary Road,<br />
                         Hebbal, Bengaluru - 560024
+                    </p>
+                    <h2 className="text-xl font-bold mb-2 font-aquirelight">UAE:</h2>
+                    <p className="mb-7">
+                        Britevista Real Estate, 08R-SH Commercial,<br />
+                        Saih Shuaib 3,<br />
+                        Dubai Industrial City
                     </p>
                     <p className="mb-2">
                         <span className="font-semibold">Phone:</span> +91 9449341722
@@ -114,7 +121,7 @@ const Footer = () => {
                     &copy; {currentYear} Clarus24. All rights reserved.
                 </p>
             </div>
-        </footer>
+        </footer >
     );
 };
 

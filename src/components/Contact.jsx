@@ -148,14 +148,19 @@ const Contact = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6746292560956!2d77.59123647585805!3d13.056370813012407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17767536e6c3%3A0x5d2b28bb18a29ed8!2sRMZ%20Latitude%20(Commercial)!5e0!3m2!1sen!2sae!4v1721459536956!5m2!1sen!2sae"
           width="100%"
-          height="450"
+          height="400"
           style={{ border: 0 }}
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Our Address</h2>
-        <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">
+        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Our Offices</h2>
+        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">India</h2>
+        <p className="mt-2 text-black text-[100%] max-w-3xl leading-[30px] xl:text-right text-left">
           Reg RMZ Latitude Commercial 10th Floor, WeWork, Bellary Road, Hebbal, Bengaluru - 560024
+        </p>
+        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">UAE</h2>
+        <p className="mt-2 text-black text-[100%] max-w-3xl leading-[30px] xl:text-right text-left">
+          Britevista Real Estate, 08R-SH Commercial, Saih Shuaib 3, Dubai Industrial City
         </p>
         <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Email Us</h2>
         <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">

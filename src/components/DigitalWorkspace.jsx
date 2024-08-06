@@ -28,13 +28,13 @@ const ServiceCard = ({ title, meaning_title, meaning, description, index, backli
             <div className="flip-card-container cursor-pointer">
                 <div className={`flip-card-inner ${flipped ? 'flipped' : ''}`}>
                     <div className="flip-card-front flex flex-col items-left">
-                        <div>
+                        <div className="-mt-10">
                             {icon && (
                                 <img src={icon} alt={`${title} icon`} className="w-12 h-12 mb-2" />
                             )}
                             <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">{title}</h3>
-                            <h3 className="text-customGreen text-[15px] font-bold lowercase italic mt-2">{meaning_title}</h3>
-                            <p className="text-customGreen text-[12px] mb-5 lowercase italic">{meaning}</p>
+                            {/* <h3 className="text-customGreen text-[15px] font-bold lowercase italic mt-2">{meaning_title}</h3>
+                            <p className="text-customGreen text-[12px] mb-5 lowercase italic">{meaning}</p> */}
                             <p className="mt-2 text-black text-[15px]">{description}</p>
                         </div>
                         <div className="absolute bottom-4 right-4">
