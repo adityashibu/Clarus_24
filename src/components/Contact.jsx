@@ -7,6 +7,58 @@ import { textVariant, fadeIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const countryCodes = [
+  { code: "+1", country: "US/CA" },
+  { code: "+91", country: "IN" },
+  { code: "+44", country: "UK" },
+  { code: "+971", country: "UAE" },
+  { code: "+61", country: "AU" },
+  { code: "+81", country: "JPN" },
+  { code: "+49", country: "GER" },
+  { code: "+33", country: "FR" },
+  { code: "+86", country: "CHIN" },
+  { code: "+7", country: "RUS" },
+  { code: "+39", country: "ITLY" },
+  { code: "+55", country: "BRZL" },
+  { code: "+27", country: "SAFR" },
+  { code: "+82", country: "KOR" },
+  { code: "+34", country: "SPN" },
+  { code: "+46", country: "SWDN" },
+  { code: "+41", country: "SWTZ" },
+  { code: "+52", country: "MEX" },
+  { code: "+31", country: "NETH" },
+  { code: "+351", country: "PORT" },
+  { code: "+48", country: "POL" },
+  { code: "+47", country: "NORW" },
+  { code: "+60", country: "MLAS" },
+  { code: "+65", country: "SING" },
+  { code: "+62", country: "IDSA" },
+  { code: "+63", country: "PHIL" },
+  { code: "+64", country: "NZLD" },
+  { code: "+43", country: "AUST" },
+  { code: "+32", country: "BELG" },
+  { code: "+420", country: "CZEC" },
+  { code: "+45", country: "DEN" },
+  { code: "+30", country: "GRC" },
+  { code: "+36", country: "HUNG" },
+  { code: "+353", country: "IRE" },
+  { code: "+353", country: "ISRL" },
+  { code: "+212", country: "MORO" },
+  { code: "+966", country: "SARB" },
+  { code: "+90", country: "TRKY" },
+  { code: "+58", country: "VENZ" },
+  { code: "+254", country: "KENY" },
+  { code: "+94", country: "SRL" },
+  { code: "+234", country: "NRA" },
+  { code: "+20", country: "EGYP" },
+  { code: "+213", country: "ALGR" },
+  { code: "+51", country: "PERU" },
+  { code: "+54", country: "ARG" },
+  { code: "+56", country: "CHIL" },
+  { code: "+373", country: "MLD" },
+  { code: "+998", country: "UZB" },
+];
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -14,13 +66,13 @@ const Contact = () => {
     email: "",
     message: "",
     phone: "",
+    countryCode: countryCodes[1].code, // Default to +91 (IN)
   });
 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
 
     setForm({
       ...form,
@@ -40,7 +92,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Clarus24",
           from_email: form.email,
-          from_phone: form.phone,
+          from_phone: `${form.countryCode} ${form.phone}`,
           to_email: "contact@clarus24.com",
           message: form.message,
         },
@@ -56,6 +108,7 @@ const Contact = () => {
             email: "",
             message: "",
             phone: "",
+            countryCode: countryCodes[1].code,
           });
         },
         (error) => {
@@ -100,16 +153,30 @@ const Contact = () => {
           </label>
           <label className="flex flex-col">
             <span className="text-customBlue font-aquire font-medium mb-4">Your Number</span>
-            <input
-              type="tel"
-              name="phone"
-              value={form.phone}
-              onChange={handleChange}
-              onInput={(e) => e.target.value = e.target.value.replace(/[^0-9+]/g, '')}
-              pattern="\+?[0-9]{1,3}[0-9]{10}"
-              maxLength="13"
-              className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium"
-            />
+            <div className="flex items-center gap-4">
+              <select
+                name="countryCode"
+                value={form.countryCode}
+                onChange={handleChange}
+                className="bg-customBlue bg-opacity-50 py-4 px-6 text-black rounded-lg outline-none border-none font-medium w-40"
+              >
+                {countryCodes.map((code) => (
+                  <option key={code.country} value={code.code}>
+                    {code.country} ({code.code})
+                  </option>
+                ))}
+              </select>
+              <input
+                type="tel"
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
+                pattern="[0-9]{10}"
+                maxLength="10"
+                className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium w-full"
+              />
+            </div>
           </label>
           <label className="flex flex-col">
             <span className="text-customBlue font-aquire font-medium mb-4">Your email</span>
@@ -168,7 +235,7 @@ const Contact = () => {
         </p>
         <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Call Us</h2>
         <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">
-          +91 9449341722
+          +91 94443 74470
         </p>
       </motion.div>
     </div>
