@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '../../utils/motion';
 import { styles } from '../../styles';

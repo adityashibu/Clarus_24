@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Footer, Navbar, ScrollUp, StarsCanvas } from '../../components';
 import { Analytics } from "@vercel/analytics/react"
 import HelpdeskPage from '../Helpdesk/HelpdeskPage';

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { Link as ScrollLink, scroller } from "react-scroll";
 import Socials from "./Socials";

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '../../utils/motion';

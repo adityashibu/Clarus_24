@@ -1,4 +1,4 @@
-import React from 'react';
+
 import WebAppHero from './WebAppHero';
 
 const WebAppPage = () => {

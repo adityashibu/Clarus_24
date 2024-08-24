@@ -1,4 +1,4 @@
-import React from 'react';
+
 import MobileHero from './MobileHero';
 
 const MobileManager = () => {

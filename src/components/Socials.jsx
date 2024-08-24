@@ -1,5 +1,3 @@
-// Socials.jsx
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
