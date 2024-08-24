@@ -96,7 +96,7 @@ const Contact = () => {
           to_email: "contact@clarus24.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY12
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
