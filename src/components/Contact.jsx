@@ -96,7 +96,7 @@ const Contact = () => {
           to_email: "contact@clarus24.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY12
       )
       .then(
         () => {
@@ -172,8 +172,8 @@ const Contact = () => {
                 value={form.phone}
                 onChange={handleChange}
                 onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
-                pattern="[0-9]{10}"
-                maxLength="10"
+                pattern="[0-9]{9}"
+                maxLength="9"
                 className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium w-full"
               />
             </div>
