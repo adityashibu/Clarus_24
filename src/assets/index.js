@@ -39,6 +39,7 @@ import ceh from "./tech/CEH.png";
 import chfi from "./tech/CHFI.png";
 import microsoftexpert from "./tech/microsoftexpert.png";
 import splunkexpert from "./tech/splunk.png";
+import jpp from "./tech/jpp.png";
 
 // For partners
 import apple from "./partners/apple.png";
@@ -46,6 +47,7 @@ import forcepoint from "./partners/forcepoint.png";
 import microsoft from "./partners/microsoft.png";
 import sophos from "./partners/sophos.png";
 import splunk from "./partners/splunk.png";
+
 
 // SVG Icons
 import applelogo from "./svg/apple.svg";
@@ -106,6 +108,7 @@ export {
   chfi,
   microsoftexpert,
   splunkexpert,
+  jpp,
 
   apple,
   forcepoint,

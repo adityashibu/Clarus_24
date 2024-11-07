@@ -132,7 +132,9 @@ const Contact = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-black text-[120%] max-w-3xl leading-[30px]"
           >
-            We strive to provide exceptional service in every situation, ensuring quick and efficient solutions that enhance the value and quality of life for our clients.
+            We strive to provide exceptional service in every situation,
+            ensuring quick and efficient solutions that enhance the value and
+            quality of life for our clients.
           </motion.p>
         </motion.div>
 
@@ -142,7 +144,9 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-customBlue font-aquire font-medium mb-4">Your Name</span>
+            <span className="text-customBlue font-aquire font-medium mb-4">
+              Your Name
+            </span>
             <input
               type="text"
               name="name"
@@ -152,7 +156,9 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-customBlue font-aquire font-medium mb-4">Your Number</span>
+            <span className="text-customBlue font-aquire font-medium mb-4">
+              Your Number
+            </span>
             <div className="flex items-center gap-4">
               <select
                 name="countryCode"
@@ -171,7 +177,9 @@ const Contact = () => {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
+                onInput={(e) =>
+                  (e.target.value = e.target.value.replace(/[^0-9]/g, ""))
+                }
                 pattern="[0-9]{9,10}"
                 maxLength="10"
                 className="bg-customBlue bg-opacity-50 py-4 px-6 placeholder:text-black text-black rounded-lg outline-none border-none font-medium w-full"
@@ -179,7 +187,9 @@ const Contact = () => {
             </div>
           </label>
           <label className="flex flex-col">
-            <span className="text-customBlue font-aquire font-medium mb-4">Your email</span>
+            <span className="text-customBlue font-aquire font-medium mb-4">
+              Your email
+            </span>
             <input
               type="email"
               name="email"
@@ -189,7 +199,9 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-customBlue font-aquire font-medium mb-4">Your Message</span>
+            <span className="text-customBlue font-aquire font-medium mb-4">
+              Your Message
+            </span>
             <textarea
               rows={7}
               name="message"
@@ -220,23 +232,52 @@ const Contact = () => {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Our Offices</h2>
-        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">India</h2>
+        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">
+          Our Offices
+        </h2>
+        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">
+          India
+        </h2>
         <p className="mt-2 text-black text-[100%] max-w-3xl leading-[30px] xl:text-right text-left">
-          Reg RMZ Latitude Commercial 10th Floor, WeWork, Bellary Road, Hebbal, Bengaluru - 560024
+          Reg RMZ Latitude Commercial 10th Floor, WeWork, Bellary Road, Hebbal,
+          Bengaluru - 560024
         </p>
-        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">UAE</h2>
+        <h2 className="font-aquirelight text-customBlue text-[150%] mt-5 xl:text-right text-left">
+          UAE
+        </h2>
         <p className="mt-2 text-black text-[100%] max-w-3xl leading-[30px] xl:text-right text-left">
-          Britevista Real Estate, 08R-SH Commercial, Saih Shuaib 3, Dubai Industrial City
+          Britevista Real Estate, 08R-SH Commercial, Saih Shuaib 3, Dubai
+          Industrial City
         </p>
-        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Email Us</h2>
+        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">
+          Email Us
+        </h2>
         <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">
           contact@clarus24.com
         </p>
-        <h2 className="font-aquirelight text-customBlue text-[200%] mt-5 xl:text-right text-left">Call Us</h2>
-        <p className="mt-2 text-black text-[120%] max-w-3xl leading-[30px] xl:text-right text-left">
-          +91 94443 74470
-        </p>
+        <div className="mt-5 xl:text-right text-left">
+          <h2 className="font-aquirelight text-customBlue text-[200%] mb-4">
+            Call Us
+          </h2>
+          <div className="flex flex-col xl:flex-row gap-8">
+            <div className="text-left xl:text-right grid grid-cols-2 gap-4">
+              <h2 className="font-aquirelight text-customBlue text-[150%]">
+                India
+              </h2>
+              <p className="mt-2 text-black text-[120%] leading-[30px]">
+                +91 94443 74470
+              </p>
+            </div>
+            <div className="text-left xl:text-right grid grid-cols-2 gap-4">
+              <h2 className="font-aquirelight text-customBlue text-[150%]">
+                UAE
+              </h2>
+              <p className="mt-2 text-black text-[120%] leading-[30px]">
+                +971 5435 36417
+              </p>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
