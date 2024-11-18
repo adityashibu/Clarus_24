@@ -6,7 +6,7 @@ const appleHome = [
   {
     title: "Harnessing Apple's Power for Business Excellence",
     content:
-      "In the heart of every thriving business lies the core of seamless technology integration—where every task is streamlined and every workflow is optimized. At [Clarus24], we begin our story with a simple but powerful belief: Apple devices are not just tools, but catalysts for transformation.",
+      "In the heart of every thriving business lies the core of seamless technology integration—where every task is streamlined and every workflow is optimized. At Clarus24, we begin our story with a simple but powerful belief: Apple devices are not just tools, but catalysts for transformation.",
   },
   {
     title: "The Apple Advantage in Business",
@@ -16,7 +16,7 @@ const appleHome = [
   {
     title: "Crafting Custom Apple Ecosystems",
     content:
-      "Our role in your story is clear: [Clarus24] masterfully integrates Apple technology into your business environment. With expertise in cutting-edge Mobile Device Management (MDM) tools, we deploy, manage, and secure Apple devices with a precision that makes complexity seem simple. Imagine deploying hundreds of devices with zero-touch setup, each pre-configured to connect seamlessly with your corporate network via Single Sign-On (SSO), ready to use straight out of the box.",
+      "Our role in your story is clear: Clarus24 masterfully integrates Apple technology into your business environment. With expertise in cutting-edge Mobile Device Management (MDM) tools, we deploy, manage, and secure Apple devices with a precision that makes complexity seem simple. Imagine deploying hundreds of devices with zero-touch setup, each pre-configured to connect seamlessly with your corporate network via Single Sign-On (SSO), ready to use straight out of the box.",
   },
   {
     title: "Zero-Touch Deployment: A New Beginning",
