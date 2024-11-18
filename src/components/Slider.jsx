@@ -57,15 +57,15 @@ const SliderApple = () => {
         {appleHome.map((slide, index) => (
           <div
             key={index}
-            className="w-full bg-[#ffffff] border-2 border-customBlue rounded-2xl shadow-card h-[300px] flex items-center justify-center text-center pl-5 pr-5"
+            className="w-full border-2 border-customBlue rounded-2xl shadow-card h-[300px] flex items-center justify-center text-center pl-5 pr-5 bg-customBlue"
           >
             <div className="text-center flex flex-col items-center justify-center h-full">
               {" "}
               {/* Added flex-col, items-center, justify-center, and h-full */}
-              <h3 className="text-customBlue font-bold text-[24px] font-aquirebold">
+              <h3 className="text-white font-bold text-[24px] font-aquirebold">
                 {slide.title}
               </h3>
-              <p className="mt-4 text-lg text-black">{slide.content}</p>
+              <p className="mt-4 text-lg text-white">{slide.content}</p>
             </div>
           </div>
         ))}
